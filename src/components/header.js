@@ -46,12 +46,13 @@ const MenuIcon = styled.button`
 
   div {
     width: 1.5rem;
-    height: 0.2rem;
+    height: 0.1rem;
     background: #181818;
     border-radius: 10px;
     transform-origin: 1px;
     position: relative;
     transition: 0.8s;
+    z-index: 999;
 
     :first-child {
       transform: ${({nav}) => nav ? 'rotate(405deg)' : 'rotate(0)'}
@@ -68,7 +69,8 @@ const MenuIcon = styled.button`
 `
 
 const MenuLinks = styled.nav`
-  transform: ${({nav}) => (nav ? "translateX(90vw)": 'translateX(0)')};
+  z-index: 10;
+  transform: ${({nav}) => (nav ? "translateX(100vw)": 'translateX(0)')};
 `
 
 const Header = props => {
@@ -190,14 +192,14 @@ const Header = props => {
               </li>
             </ul>
           </div>
-          <div className = "burger">
-            <MenuIcon nav = {nav} onClick = {() => setToggleNav(!nav)}>
-              <div />
-              <div />
-              <div /> 
-            </MenuIcon>              
-          </div>
         </MenuLinks>
+      <div className = "burger">
+        <MenuIcon nav = {nav} onClick = {() => setToggleNav(!nav)}>
+          <div />
+          <div />
+          <div /> 
+        </MenuIcon>              
+      </div>
       </div>
       {/* <div className = "circle-text">
         <Link
