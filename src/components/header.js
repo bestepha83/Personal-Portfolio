@@ -95,9 +95,12 @@ const Header = props => {
   return (
     <header className="site-head-container">
       <div className = "site-head-top">
-        <div className = "logo">
+        <Link 
+          className = "logo"
+          to={`/`}
+        >
           <h2>Ben Stephan</h2>
-        </div>
+        </Link>
         <ColorMode
           className = "color-mode" 
           button = {button}

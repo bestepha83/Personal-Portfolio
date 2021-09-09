@@ -3,38 +3,38 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostCard from "../components/codeCard"
+import PostCard from "../components/photoCard"
 
 import '../styles/styles.scss'
 
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
-  const projects = data.allMarkdownRemark.edges
-  let projectsCounter = 0
+  const places = data.allMarkdownRemark.edges
+  let placesCounter = 0
 
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Code"
+        title="places"
         keywords={[
-          `Code`,
+          `mala jam places`,
         ]}
-        description="My coding projects"
+        description="The placess of mala jam records are a unqiue blend of genres and styles"
       />
 
-      <section className = "code-banner">
-        <h1>Programming</h1>
+      <section className = "places-banner">
+        <h1>Places</h1>
       </section>
-      <section className = "code-main">
-        <h2>Projects</h2>
-        <div className="project-feed">
-          {projects.map(({ node }) => {
-            projectsCounter++
+      <section className = "places-main">
+        <h2>My Trips</h2>
+        <div className="place-feed">
+          {places.map(({ node }) => {
+            placesCounter++
             return (
               <PostCard
                 key={node.fields.slug}
-                count={projectsCounter}
+                count={placesCounter}
                 node={node}
                 postClass={`post`}
               />
@@ -55,7 +55,7 @@ const indexQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { frontmatter: { category: { eq: "code" } } }
+      filter: { frontmatter: { category: { eq: "photo" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

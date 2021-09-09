@@ -5,7 +5,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   let codePost = path.resolve(`./src/templates/coding-template.js`)
-  // let photoPost = path.resolve(`./src/templates/photo-template.js`)
+  let photoPost = path.resolve(`./src/templates/photo-template.js`)
   return graphql(
     `
       {
@@ -48,18 +48,17 @@ exports.createPages = ({ graphql, actions }) => {
             next,
           }
         });
-      } 
-      // else if (post.node.frontmatter.category === 'photo') {
-      //   createPage({
-      //     path: post.node.fields.slug,
-      //     component: photoPost,
-      //     context: {
-      //       slug:  post.node.fields.slug,
-      //       previous,
-      //       next,
-      //     }
-      //   });
-      // }
+      } else if (post.node.frontmatter.category === 'photo') {
+        createPage({
+          path: post.node.fields.slug,
+          component: photoPost,
+          context: {
+            slug:  post.node.fields.slug,
+            previous,
+            next,
+          }
+        });
+      }
 
     })
 

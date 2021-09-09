@@ -3,7 +3,7 @@ import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostCard from "../components/codeCard"
+import PostCard from "../components/photoCard"
 
 import '../styles/styles.scss'
 
@@ -16,19 +16,19 @@ const BlogIndex = ({ data }) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Code"
+        title="Photography"
         keywords={[
-          `Code`,
+          `photography`,
         ]}
-        description="My coding projects"
+        description="Photography"
       />
 
-      <section className = "code-banner">
-        <h1>Programming</h1>
+      <section className = "photo-banner">
+        <h1>Photography</h1>
       </section>
-      <section className = "code-main">
+      <section className = "photo-main">
         <h2>Projects</h2>
-        <div className="project-feed">
+        <div className="photo-feed">
           {projects.map(({ node }) => {
             projectsCounter++
             return (
@@ -55,7 +55,7 @@ const indexQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { frontmatter: { category: { eq: "code" } } }
+      filter: { frontmatter: { category: { eq: "photo" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
