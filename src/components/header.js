@@ -46,7 +46,7 @@ const MenuIcon = styled.button`
 
   div {
     width: 1.5rem;
-    height: 0.1rem;
+    height: 1px;
     background: #181818;
     border-radius: 10px;
     transform-origin: 1px;
@@ -78,19 +78,17 @@ const Header = props => {
   const [nav, setToggleNav] = React.useState(false)
   const [button, setToggleButton] = React.useState(false)
   const linkStyles = {
+    color: '#181818',
     opacity: "0.4",
   }
   const activeStyles = {
-    opacity: 1,
+    color: '#181818',
+    opacity: "1",
   }
   const data = useStaticQuery(graphql`
     query {
-      circletext: file(relativePath: { eq: "circletext.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
+      currentBuildDate {
+        currentDate
       }
     }
   `)
@@ -120,7 +118,7 @@ const Header = props => {
           <div className = "header-date">
             <div className = "header-date-items">
               <div className = "date-line"></div>
-              <h2>December 25, 2020</h2>
+              <h2>Updated {data.currentBuildDate.currentDate}</h2>
               <div className = "date-line"></div>              
             </div>
             {/* current date for regular pages, past date for dynamic pages */}
@@ -201,16 +199,15 @@ const Header = props => {
         </MenuIcon>              
       </div>
       </div>
-      {/* <div className = "circle-text">
+      <div className = "circle-text">
         <Link
           to={`/contact`}
         >
-          <Img
-            fluid={data.circletext.childImageSharp.fluid}
-            className="kg-image site-head-logo"
+          <StaticImage
+            src="../images/circletext.png" alt = "contact me"
           />          
         </Link>
-      </div> */}
+      </div>
     </header>
   )
 }
