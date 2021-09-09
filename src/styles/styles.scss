@@ -210,3 +210,56 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+
+// PROGRAMMING PAGE //
+
+.code-banner {
+    @include flexCenter();
+    height: 100vh;
+    background-color: rgb(255, 196, 87);
+    h1 {
+        font-size: 15rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.code-main {
+    @include flexCenter();
+    flex-direction: column;
+    h2 {
+        font-size: 10rem;
+    }
+
+    /// PROJECT FEED ///
+
+    .project-feed {
+        @include flexCenter();
+        .project-card {
+            @include flexCenter();
+            width: 100%;
+            height: 50vh;
+            .project-card-image {
+                width: 50%;
+                img {
+                    width: 40vw;
+                }
+            }
+            .project-card-content {
+                width: 50%;
+                h4 {
+                    font-size: 5rem;
+                }
+                button {
+                    padding: 1rem 2rem;
+                    background: transparent;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
