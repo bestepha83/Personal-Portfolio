@@ -4,19 +4,19 @@ import Layout from "../components/layout"
 
 const IndexPage = () => (
   <Layout>
-    <section>
+    <section className = "banner">
       <h1>Good Afternoon! I'm Ben, and this is my website.</h1>
     </section>
-    <section>
+    <section className = "home-section">
       <h4>Photography</h4>
     </section>
-    <section>
+    <section className = "home-section">
       <h4>Programming</h4>
     </section>
-    <section>
+    <section className = "home-section">
       <h4>Design</h4>
     </section>
-    <section>
+    <section className = "home-section">
       <h4>Music</h4>
     </section>
   </Layout>

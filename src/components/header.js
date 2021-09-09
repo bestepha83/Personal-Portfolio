@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useContext } from "react"
+import Context from '../store/context'
 import '../styles/styles.scss'
 import styled from 'styled-components'
 import { Link, useStaticQuery, graphql } from "gatsby"
@@ -71,127 +72,145 @@ const MenuLinks = styled.nav`
 `
 
 const Header = props => {
-    const linkStyles = {
-      opacity: "0.4",
-    }
-    const activeStyles = {
-      opacity: 1,
-    }
-    const data = useStaticQuery(graphql`
-      query {
-        circletext: file(relativePath: { eq: "circletext.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 300) {
-              ...GatsbyImageSharpFluid
-            }
+  const { dispatch } = useContext(Context)
+  const [nav, setToggleNav] = React.useState(false)
+  const [button, setToggleButton] = React.useState(false)
+  const linkStyles = {
+    opacity: "0.4",
+  }
+  const activeStyles = {
+    opacity: 1,
+  }
+  const data = useStaticQuery(graphql`
+    query {
+      circletext: file(relativePath: { eq: "circletext.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
-    `)
-    return (
-      <header className="site-head-container">
-        <div className = "site-head-top">
-          <div className = "logo">
-            <h2>Ben Stephan</h2>
+    }
+  `)
+  return (
+    <header className="site-head-container">
+      <div className = "site-head-top">
+        <div className = "logo">
+          <h2>Ben Stephan</h2>
+        </div>
+        <ColorMode
+          className = "color-mode" 
+          button = {button}
+          onClick={() =>  dispatch({type: "TOGGLE_DARK_MODE"})}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.09 110.96" onClick={() =>  setToggleButton(!button)}>
+          <defs></defs>
+            <g id="Layer_2" data-name="Layer 2">
+            <g id="Layer_1-2" data-name="Layer 1" className = "isolate">
+            <path class="cls-1" d="M124.5,59.35c-5,33.77-32.51,54.72-62.28,51.24C32.34,106.87,4.42,85.94.4,59.35S23.82,3.89,62.68.31,129.54,25.72,124.5,59.35Z"/>
+            </g>
+            </g>
+          </svg>
+        </ColorMode>
+      </div>
+      <div className="site-head-left">
+        <div className = "page-info">
+          <div className = "header-date">
+            <div className = "header-date-items">
+              <div className = "date-line"></div>
+              <h2>December 25, 2020</h2>
+              <div className = "date-line"></div>              
+            </div>
+            {/* current date for regular pages, past date for dynamic pages */}
+          </div>
+          <div className = "current-page">
+            <div className = 'current-page-items'>
+              <h2>Welcome</h2>              
+            </div>
           </div>
         </div>
-        <div className="site-head-left">
-          <div className = "page-info">
-            <div className = "header-date">
-              <div className = "header-date-items">
-                <div className = "date-line"></div>
-                <h2>December 25, 2020</h2>
-                <div className = "date-line"></div>              
-              </div>
-              {/* current date for regular pages, past date for dynamic pages */}
-            </div>
-            <div className = "current-page">
-              <div className = 'current-page-items'>
-                <h2>Welcome</h2>              
-              </div>
-            </div>
+        <MenuLinks nav = {nav}>
+          <div className = "navigation">
+            <ul className="nav-list">
+              <li className="nav-elements">
+                <Link
+                  nav = {nav}
+                  to={`/`}
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="nav-elements">
+                <Link
+                  to={`/code`}
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                  partiallyActive={true}
+                >
+                  Code
+                </Link>
+              </li>
+              <li className="nav-elements">
+                <Link
+                  to={`/photo`}
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                >
+                  Photography
+                </Link>
+              </li>
+              <li className="nav-elements">
+                <Link
+                  to={`/music`}
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                >
+                  Music
+                </Link>
+              </li>
+              <li className="nav-elements">
+                <Link
+                  to={`/design`}
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                >
+                  Design
+                </Link>
+              </li>
+              <li className="nav-elements">
+                <Link
+                  to={`/contact`}
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
-          <MenuLinks>
-            <div className = "navigation">
-              <ul className="nav-list">
-                <li className="nav-elements">
-                  <Link
-                    to={`/`}
-                    style={linkStyles}
-                    activeStyle={activeStyles}
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li className="nav-elements">
-                  <Link
-                    to={`/code`}
-                    style={linkStyles}
-                    activeStyle={activeStyles}
-                    partiallyActive={true}
-                  >
-                    Code
-                  </Link>
-                </li>
-                <li className="nav-elements">
-                  <Link
-                    to={`/photo`}
-                    style={linkStyles}
-                    activeStyle={activeStyles}
-                  >
-                    Photography
-                  </Link>
-                </li>
-                <li className="nav-elements">
-                  <Link
-                    to={`/music`}
-                    style={linkStyles}
-                    activeStyle={activeStyles}
-                  >
-                    Music
-                  </Link>
-                </li>
-                <li className="nav-elements">
-                  <Link
-                    to={`/design`}
-                    style={linkStyles}
-                    activeStyle={activeStyles}
-                  >
-                    Design
-                  </Link>
-                </li>
-                <li className="nav-elements">
-                  <Link
-                    to={`/contact`}
-                    style={linkStyles}
-                    activeStyle={activeStyles}
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            {/* <div className = "burger">
-              <MenuIcon nav = {nav} onClick = {() => setToggleNav(!nav)}>
-                <div />
-                <div />
-                <div /> 
-              </MenuIcon>              
-            </div> */}
-          </MenuLinks>
-        </div>
-        {/* <div className = "circle-text">
-          <Link
-            to={`/contact`}
-          >
-            <StaticImage
-              fluid={data.circletext.childImageSharp.fluid}
-              className="kg-image site-head-logo"
-            />          
-          </Link>
-        </div> */}
-      </header>
-    )
+          <div className = "burger">
+            <MenuIcon nav = {nav} onClick = {() => setToggleNav(!nav)}>
+              <div />
+              <div />
+              <div /> 
+            </MenuIcon>              
+          </div>
+        </MenuLinks>
+      </div>
+      {/* <div className = "circle-text">
+        <Link
+          to={`/contact`}
+        >
+          <Img
+            fluid={data.circletext.childImageSharp.fluid}
+            className="kg-image site-head-logo"
+          />          
+        </Link>
+      </div> */}
+    </header>
+  )
 }
   
 export default Header
