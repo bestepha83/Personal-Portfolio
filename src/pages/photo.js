@@ -10,8 +10,8 @@ import '../styles/styles.scss'
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
-  const projects = data.allMarkdownRemark.edges
-  let projectsCounter = 0
+  const photos = data.allMarkdownRemark.edges
+  let photosCounter = 0
 
   return (
     <Layout title={siteTitle}>
@@ -29,12 +29,12 @@ const BlogIndex = ({ data }) => {
       <section className = "photo-main">
         <h2>Projects</h2>
         <div className="photo-feed">
-          {projects.map(({ node }) => {
-            projectsCounter++
+          {photos.map(({ node }) => {
+            photosCounter++
             return (
               <PostCard
                 key={node.fields.slug}
-                count={projectsCounter}
+                count={photosCounter}
                 node={node}
                 postClass={`post`}
               />

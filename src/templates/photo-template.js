@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
-import StaticImage from "gatsby-plugin-image"
+import {StaticImage} from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
