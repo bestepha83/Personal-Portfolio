@@ -208,7 +208,7 @@ const Header = props => {
         >
           <StaticImage
             src="../images/circletext.png" alt = "contact me"
-          />          
+          />
         </Link>
       </div>
     </header>
