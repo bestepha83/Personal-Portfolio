@@ -58,7 +58,7 @@ const IndexPage = () => (
       </div>
     </section>
     <section className = "home-section">
-      <h4>Design</h4>
+      <h4>Music</h4>
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
@@ -66,9 +66,9 @@ const IndexPage = () => (
           />
         </div>
         <div className = "col-6">
-          <p>I like to do photography for fun. Check out my stuff!</p>
+          <p>I like to do music for fun. Check out my stuff!</p>
           <Link
-            to={`/`}
+            to={`/music`}
           >
             <button>
               Explore
@@ -78,12 +78,12 @@ const IndexPage = () => (
       </div>
     </section>
     <section className = "home-section">
-      <h4>Music</h4>
+      <h4>Design</h4>
       <div className = "home-content">
         <div className = "col-6">
-          <p>I like to do photography for fun. Check out my stuff!</p>
+          <p>I like to do design for fun. Check out my stuff!</p>
           <Link
-            to={`/`}
+            to={`/design`}
           >
             <button>
               Explore

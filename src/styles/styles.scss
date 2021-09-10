@@ -297,6 +297,45 @@
     }
 }
 
+.photo-main {
+    @include flexCenter();
+    flex-direction: column;
+    h2 {
+        font-size: 7rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /// PROJECT FEED ///
+
+    .photo-feed {
+        @include flexCenter();
+        flex-direction: column;
+        .photo-card {
+            @include flexCenter();
+            width: 100%;
+            height: 100vh;
+            .photo-card-image {
+                width: 50%;
+                img {
+                    width: 40vw;
+                }
+            }
+            .photo-card-content {
+                width: 50%;
+                h4 {
+                    font-size: 5rem;
+                }
+                button {
+                    padding: 1rem 2rem;
+                    background: transparent;
+                    outline: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
 
 // PROGRAMMING PAGE //
 
@@ -320,17 +359,20 @@
     @include flexCenter();
     flex-direction: column;
     h2 {
-        font-size: 10rem;
+        font-size: 7rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-fill-color: transparent;
     }
 
     /// PROJECT FEED ///
 
     .project-feed {
         @include flexCenter();
+        flex-direction: column;
         .project-card {
             @include flexCenter();
             width: 100%;
-            height: 50vh;
+            height: 100vh;
             .project-card-image {
                 width: 50%;
                 img {
@@ -352,6 +394,40 @@
         }
     }
 }
+
+
+
+
+// DESIGN PAGE //
+
+.design-banner {
+    @include flexCenter();
+    height: 100vh;
+    background-color: rgb(91, 182, 137);
+    h1 {
+        font-size: 8rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
+
+
+// MUSIC PAGE //
+
+.music-banner {
+    @include flexCenter();
+    height: 100vh;
+    background-color: rgb(91, 182, 137);
+    h1 {
+        font-size: 8rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+
 
 
 // CONTACT //

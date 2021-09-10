@@ -2,7 +2,7 @@
 title: Mala Jam Records
 category: code
 date: "2020-10-15"
-thumbnail: ../assets/code.png
+thumbnail: ../assets/malajam.png
 description: Nectar for the ears
 ---
 

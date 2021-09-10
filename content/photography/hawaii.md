@@ -2,7 +2,7 @@
 title: Big Island, Hawaii
 category: photo
 date: "2020-10-15"
-thumbnail: ../assets/code.png
+thumbnail: ../assets/hawaii.jpg
 description: Nectar for the ears
 ---
 
