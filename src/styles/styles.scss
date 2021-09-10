@@ -311,9 +311,10 @@
     .photo-feed {
         @include flexCenter();
         flex-direction: column;
+        width: 100vw;
         .photo-card {
             @include flexCenter();
-            width: 100%;
+            width: 90%;
             height: 100vh;
             .photo-card-image {
                 width: 50%;
@@ -324,7 +325,10 @@
             .photo-card-content {
                 width: 50%;
                 h4 {
-                    font-size: 5rem;
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 2rem;
                 }
                 button {
                     padding: 1rem 2rem;
@@ -369,9 +373,10 @@
     .project-feed {
         @include flexCenter();
         flex-direction: column;
+        width: 100vw;
         .project-card {
             @include flexCenter();
-            width: 100%;
+            width: 90%;
             height: 100vh;
             .project-card-image {
                 width: 50%;
@@ -382,7 +387,10 @@
             .project-card-content {
                 width: 50%;
                 h4 {
-                    font-size: 5rem;
+                    font-size: 4rem;
+                }
+                p {
+                    font-size: 2rem;
                 }
                 button {
                     padding: 1rem 2rem;
@@ -402,6 +410,7 @@
 
 .design-banner {
     @include flexCenter();
+    flex-direction: column;
     height: 100vh;
     background-color: rgb(91, 182, 137);
     h1 {
@@ -410,6 +419,39 @@
         -webkit-text-fill-color: transparent;
     }
 }
+
+
+.design-main {
+    @include flexCenter();
+    flex-direction: column;
+    h2 {
+        font-size: 7rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-fill-color: transparent;
+        margin: 3rem;
+    }
+
+    /// DESIGN FEED ///
+
+    .design-feed {
+        @include flexCenter();
+        flex-wrap: wrap;
+        width: 100vw;
+        .design-card {
+            @include flexCenter();
+            width: 50%;
+            margin-bottom: 2rem;
+            .design-card-image {
+                img {
+                    width: 30vw;
+                }
+            }
+        }
+    }
+}
+
+
+
 
 
 

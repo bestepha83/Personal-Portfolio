@@ -19,7 +19,7 @@ export default props => (
       </h4>
       <p>{props.node.frontmatter.description}</p>
       <Link to={props.node.fields.slug} className="project-card-link">
-        <button>Read More</button>
+        <button>Read Less</button>
       </Link>
     </div>
   </article>

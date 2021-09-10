@@ -28,7 +28,7 @@ const BlogIndex = ({ data }) => {
         <h4>I have created created multiple projects, and you can view some of them here.</h4>
       </section>
       <section className = "code-main">
-        <h2>Projects</h2>
+        <h2>Websites</h2>
         <div className="project-feed">
           {projects.map(({ node }) => {
             projectsCounter++
