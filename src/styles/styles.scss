@@ -140,7 +140,7 @@
             @include flexCenter();
             position: absolute;
             left: 0;
-            width: 10%;
+            margin: 0 4rem;
             height: 100%;
             background-color: transparent;
         }
@@ -306,7 +306,7 @@
         -webkit-text-fill-color: transparent;
     }
 
-    /// PROJECT FEED ///
+    /// PHOTO FEED ///
 
     .photo-feed {
         @include flexCenter();
@@ -403,6 +403,39 @@
     }
 }
 
+// PROGRAMMING TEMPLATE
+
+.project-content {
+    .project-banner {
+        @include flexCenter();
+        flex-direction: column;
+        height: 100vh;
+        h1 {
+            font-size: 8rem;
+            -webkit-text-stroke: 1px;
+            -webkit-text-fill-color: transparent;
+        }
+        .project-image-container {
+            img {
+                width: 30vw;
+            }
+        }
+    }
+    .project-about {
+        @include flexCenter();
+        flex-direction: column;
+        .project-content-body {
+            width: 80%;
+            img {
+                width: 200px;
+            }
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
 
 
 
@@ -450,6 +483,50 @@
     }
 }
 
+// DESIGN TEMPLATE
+
+.design-content {
+    .design-banner {
+        @include flexCenter();
+        flex-direction: column;
+        height: 100vh;
+        h1 {
+            font-size: 8rem;
+            -webkit-text-stroke: 1px;
+            -webkit-text-fill-color: transparent;
+        }
+        .design-image-container {
+            img {
+                width: 30vw;
+            }
+        }
+    }
+    .design-about {
+        @include flexCenter();
+        flex-direction: column;
+        width: 80%;
+        h4 {
+            font-size: 3rem;
+        }
+        .design-content-body {
+            @include flexCenter();
+            flex-direction: column;
+            width: 80%;
+            h6 {
+                font-size: 2rem;
+            }            
+            img {
+                width: 20vw;
+            }                
+            
+            p {
+                font-size: 2rem;
+            }
+
+        }
+    }
+}
+
 
 
 
@@ -460,6 +537,7 @@
 
 .music-banner {
     @include flexCenter();
+    flex-direction: column;
     height: 100vh;
     background-color: rgb(91, 182, 137);
     h1 {
@@ -468,7 +546,29 @@
         -webkit-text-fill-color: transparent;
     }
 }
-
+.music-main {
+    @include flexCenter();
+    h2 {
+        font-size: 5rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-fill-color: transparent;          
+    }
+    .music-feed {
+        @include flexCenter();
+        flex-wrap: wrap;
+        width: 80%;
+        .music-card {
+            @include flexCenter();
+            width: 50%;
+            margin-bottom: 2rem;
+            .music-card-image {
+                img {
+                    width: 30vw;
+                }
+            }
+        }
+    }        
+}
 
 
 
@@ -491,6 +591,27 @@
         width: 100%;
         .contact-col-6 {
             width: 50%;
+            form {
+                @include flexCenter();
+                flex-direction: column;
+                .contact-input {
+                    label {
+                        color: rgb(91, 182, 137);
+                        display: block;
+                        font-size: 0.9em;
+                        margin: 0;
+                        input, select, textarea {
+                            color: rgb(91, 182, 137);
+                            border: none;
+                            border: solid 1px rgb(91, 182, 137);
+                            background-color: transparent;
+                            text-decoration: none;
+                            padding: 1rem 0.5rem;
+                            margin: 1rem 0;
+                        }
+                    }                
+                }            
+            }
         }
     }
 }

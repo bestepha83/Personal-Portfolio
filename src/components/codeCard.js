@@ -1,14 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import '../styles/styles.scss'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 
 export default props => (
   <article className={`project-card`}>
     <div className="project-card-image">
       <Link to={props.node.fields.slug}>
-        <img
-          src={props.node.frontmatter.thumbnail.childImageSharp.fluid.src}
+        <GatsbyImage
+          image={getImage(props.node.frontmatter.thumbnail)}
           alt="project feed"
         />
       </Link>
@@ -19,7 +20,7 @@ export default props => (
       </h4>
       <p>{props.node.frontmatter.description}</p>
       <Link to={props.node.fields.slug} className="project-card-link">
-        <button>Read Less</button>
+        <button>Read More</button>
       </Link>
     </div>
   </article>

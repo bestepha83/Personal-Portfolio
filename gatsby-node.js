@@ -6,6 +6,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   let codePost = path.resolve(`./src/templates/coding-template.js`)
   let photoPost = path.resolve(`./src/templates/photo-template.js`)
+  let musicPost = path.resolve(`./src/templates/music-template.js`)
   let designPost = path.resolve(`./src/templates/design-template.js`)
   return graphql(
     `
@@ -53,6 +54,16 @@ exports.createPages = ({ graphql, actions }) => {
         createPage({
           path: post.node.fields.slug,
           component: photoPost,
+          context: {
+            slug:  post.node.fields.slug,
+            previous,
+            next,
+          }
+        });
+      } else if (post.node.frontmatter.category === 'music') {
+        createPage({
+          path: post.node.fields.slug,
+          component: musicPost,
           context: {
             slug:  post.node.fields.slug,
             previous,

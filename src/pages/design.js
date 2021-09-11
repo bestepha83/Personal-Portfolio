@@ -8,7 +8,7 @@ import PostCard from "../components/designCard"
 import '../styles/styles.scss'
 
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
-const BlogIndex = ({ data }) => {
+const DesignIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
   const design = data.allMarkdownRemark.edges
   let designCounter = 0
@@ -72,9 +72,7 @@ const indexQuery = graphql`
             category
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 1360) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData
               }
             }
           }
@@ -88,7 +86,7 @@ export default props => (
   <StaticQuery
     query={indexQuery}
     render={data => (
-      <BlogIndex location={props.location} props data={data} {...props} />
+      <DesignIndex location={props.location} props data={data} {...props} />
     )}
   />
 )

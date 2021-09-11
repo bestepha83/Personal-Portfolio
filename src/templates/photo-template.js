@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
-import {StaticImage} from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,18 +17,14 @@ class BlogPostTemplate extends React.Component {
           title={photo.frontmatter.title}
           description={photo.frontmatter.description || photo.excerpt}
         />
-        <article
-          className={`photo-content ${photo.frontmatter.thumbnail ||
-            `no-image`}`}
-        >
+        <article className="photo-content">
           <div className="photo-banner">
             <h1 className="photo-content-title">{photo.frontmatter.title}</h1>
             <div className="photo-image-container">
               {photo.frontmatter.thumbnail && (
                 <div className="photo-content-image">
-                  <StaticImage
-                    className="kg-image"
-                    fluid={photo.frontmatter.thumbnail.childImageSharp.fluid}
+                  <GatsbyImage
+                    image={getImage(photo.frontmatter.thumbnail)}
                     alt={photo.frontmatter.title}
                   />
                 </div>
@@ -41,7 +37,6 @@ class BlogPostTemplate extends React.Component {
             </p>
           )}
           <div className="photo-about">
-            <h2>About {photo.frontmatter.title}</h2>
             <div
               className="photo-content-body"
               dangerouslySetInnerHTML={{ __html: photo.html }}
@@ -76,9 +71,7 @@ export const pageQuery = graphql`
         category
         thumbnail {
           childImageSharp {
-            fluid(maxWidth: 1360) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData
           }
         }
       }

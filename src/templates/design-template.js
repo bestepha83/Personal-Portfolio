@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
 import PropTypes from "prop-types"
-import {StaticImage} from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,31 +17,26 @@ class BlogPostTemplate extends React.Component {
           title={design.frontmatter.title}
           description={design.frontmatter.description || design.excerpt}
         />
-        <article
-          className={`design-content ${design.frontmatter.thumbnail ||
-            `no-image`}`}
-        >
+        <article className = "design-content">
           <div className="design-banner">
-            <h1 className="design-content-title">{design.frontmatter.title}</h1>
             <div className="design-image-container">
               {design.frontmatter.thumbnail && (
                 <div className="design-content-image">
-                  <StaticImage
-                    className="kg-image"
-                    fluid={design.frontmatter.thumbnail.childImageSharp.fluid}
+                  <GatsbyImage
+                    image={getImage(design.frontmatter.thumbnail)}
                     alt={design.frontmatter.title}
                   />
                 </div>
               )}
             </div>
+            {design.frontmatter.description && (
+              <p class="design-content-excerpt">
+                {design.frontmatter.description}
+              </p>
+            )}
           </div>
-          {design.frontmatter.description && (
-            <p class="design-content-excerpt">
-              "{design.frontmatter.description}"
-            </p>
-          )}
           <div className="design-about">
-            <h2>About {design.frontmatter.title}</h2>
+            <h4>Process</h4>
             <div
               className="design-content-body"
               dangerouslySetInnerHTML={{ __html: design.html }}
@@ -76,9 +71,7 @@ export const pageQuery = graphql`
         category
         thumbnail {
           childImageSharp {
-            fluid(maxWidth: 1360) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData
           }
         }
       }

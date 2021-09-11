@@ -7,7 +7,6 @@ import PostCard from "../components/codeCard"
 
 import '../styles/styles.scss'
 
-//TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
   const projects = data.allMarkdownRemark.edges
@@ -72,9 +71,7 @@ const indexQuery = graphql`
             category
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 1360) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData
               }
             }
           }

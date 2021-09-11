@@ -71,9 +71,7 @@ const indexQuery = graphql`
             category
             thumbnail {
               childImageSharp {
-                fluid(maxWidth: 1360) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData
               }
             }
           }
