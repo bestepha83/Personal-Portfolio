@@ -6,7 +6,7 @@ thumbnail: ../assets/design/sunday-morn-v1.png
 description: Coffee. Relaxed.
 ---
 
-Spotify Link: ...
+Spotify Link: https://open.spotify.com/playlist/4TwNCKNNIrinZLdkPsZDxf?si=d0e8592a7ae4423f
 
 <h6>Sketch</h6>
 

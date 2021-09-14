@@ -39,10 +39,11 @@
 
     // LEFT NAV //
     .site-head-left {
-        position: absolute;
+        position: fixed;
         @include flexCenter();
         width: 100%;
         height: 100%;
+        z-index: 5000;
         .page-info {
             position: absolute;
             bottom: 0;
@@ -53,7 +54,6 @@
             justify-content: space-between;
             transform: rotate(-90deg);
             transform-origin: 0 0;
-            z-index: 500;
             .current-page {
                 .current-page-items {
                     h2 {
@@ -68,7 +68,6 @@
                         background-color: #181818;
                         width: 30px;
                         height: 0.01rem;
-
                     }
                     h2 {
                         font-size: 1rem;
@@ -163,7 +162,7 @@
 
 
 .circle-text {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     width: 12rem;
@@ -203,8 +202,8 @@
     }
     .banner-headshot {
         position: absolute;
-        bottom: 0;
-        right: 80px;
+        bottom: 80px;
+        right: 150px;
         width: 30rem;
         z-index: 2;
         img {
@@ -340,6 +339,57 @@
         }
     }
 }
+
+// PHOTO TEMPLATE
+
+.photo-content {
+    .photo-banner {
+        background-color: white;
+        height: 200vh;
+        .photo-banner-content {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            top: 100px;
+            h1 {
+                font-size: 14rem;
+                text-align: right;
+            }
+            h3 {
+                font-size: 8rem;
+                text-align: right;
+            }
+            .photo-image-container {
+                display: flex;
+                position: relative;
+                right: -300px;
+                margin-top: 3rem;
+                .photo-image-main {
+                    width: 35rem;
+                    margin: 2rem;
+                }
+                .photo-image-secondary {
+                    width: 35rem;
+                }
+            }
+        }
+    }
+    .photo-about {
+        @include flexCenter();
+        width: 100%;
+        .photo-content-body {
+            width: 80%;
+            img {
+                width: 300px;
+            }
+        }
+    }
+}
+
+
+
 
 // PROGRAMMING PAGE //
 

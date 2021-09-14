@@ -69,6 +69,11 @@ const indexQuery = graphql`
             title
             description
             category
+            image2 {
+              childImageSharp {
+                gatsbyImageData
+              }
+            }
             thumbnail {
               childImageSharp {
                 gatsbyImageData

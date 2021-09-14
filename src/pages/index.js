@@ -13,7 +13,7 @@ const IndexPage = () => (
       <h1>Good Afternoon! I'm Ben, and this is my website.</h1>
       <div className = "banner-headshot">
         <StaticImage
-          src="../images/banner-headshot.png" alt = "Headshot"
+          src="../images/ben-banner.jpg" alt = "Headshot"
         />
       </div>
     </section>

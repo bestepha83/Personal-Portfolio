@@ -19,23 +19,29 @@ class BlogPostTemplate extends React.Component {
         />
         <article className="photo-content">
           <div className="photo-banner">
-            <h1 className="photo-content-title">{photo.frontmatter.title}</h1>
-            <div className="photo-image-container">
+            <div className = "photo-banner-content">
+              <h1 className="photo-content-title">{photo.frontmatter.title}</h1>
+              <h3 className="photo-content-location">{photo.frontmatter.description}</h3>
+              <div className="photo-image-container">
               {photo.frontmatter.thumbnail && (
-                <div className="photo-content-image">
-                  <GatsbyImage
-                    image={getImage(photo.frontmatter.thumbnail)}
-                    alt={photo.frontmatter.title}
-                  />
-                </div>
-              )}
+                  <div className="photo-image-main">
+                    <GatsbyImage
+                      image={getImage(photo.frontmatter.thumbnail)}
+                      alt={photo.frontmatter.title}
+                    />
+                  </div>
+                )}
+                {photo.frontmatter.thumbnail && (
+                  <div className="photo-image-secondary">
+                    <GatsbyImage
+                      image={getImage(photo.frontmatter.image2)}
+                      alt={photo.frontmatter.title}
+                    />
+                  </div>
+                )}
+              </div>            
             </div>
           </div>
-          {photo.frontmatter.description && (
-            <p class="photo-content-excerpt">
-              "{photo.frontmatter.description}"
-            </p>
-          )}
           <div className="photo-about">
             <div
               className="photo-content-body"
@@ -69,6 +75,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
         category
+        image2 {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
         thumbnail {
           childImageSharp {
             gatsbyImageData
