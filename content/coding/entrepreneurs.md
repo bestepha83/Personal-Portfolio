@@ -20,7 +20,7 @@ description: Website migration and redesign for improved sustainability, brandin
 
 ![](../assets/code/entrepreneur/entrepreneur-7.png)
 
-You can view the website here:
+You can view the website here: https://cpentrepreneurs.com/
 
 Looking for clubs my second-year of college, I happened upon Cal Poly Entrepreneur's website. As I browsed the site, I noticed many bugs and errors, from a disappearing menu on mobile to poor responsiveness.
 

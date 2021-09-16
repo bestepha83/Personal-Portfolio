@@ -69,7 +69,7 @@ const MenuIcon = styled.button`
 `
 
 const MenuLinks = styled.nav`
-  z-index: 10;
+  z-index: 98;
   transform: ${({nav}) => (nav ? "translateX(100vw)": 'translateX(0)')};
 `
 

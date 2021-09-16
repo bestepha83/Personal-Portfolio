@@ -1,9 +1,40 @@
 ---
-title: Belize
+title: Ambegris Caye
 category: photo
 date: "2020-10-15"
-thumbnail: ../assets/hawaii.jpg
-description: Almost Paradise
+thumbnail: ../assets/photo/belize/belize-1.png
+image2: ../assets/photo/belize/belize-2.jpg
+description: Belize
 ---
 
-Goodbye Eden is an indie rock band given life from the suburbs of Wisconsin. Consisting of members based across the US from Los Angeles, CA to Wisconsin, these fellas get together when they can to whip up some sweet sweet jams. Coming from a variety of musical backgrounds such as jazz, mariachi, classical, funk, rock, and musical theatre, their sound is an amalgamation of each member’s ideas and experiences. Each member of GBE has a wide variety of talents, passions, and interests, giving them opportunities to discover new elements for their creative process.
+![Belize](../assets/photo/belize/belize-3.jpg)
+
+![Belize](../assets/photo/belize/belize-4.jpg)
+
+![Belize](../assets/photo/belize/belize-5.jpg)
+
+![Belize](../assets/photo/belize/belize-6.jpg)
+
+![Belize](../assets/photo/belize/belize-7.jpg)
+
+![Belize](../assets/photo/belize/belize-8.jpg)
+
+![Belize](../assets/photo/belize/belize-9.jpg)
+
+![Belize](../assets/photo/belize/belize-10.jpg)
+
+![Belize](../assets/photo/belize/belize-11.jpg)
+
+![Belize](../assets/photo/belize/belize-12.jpg)
+
+![Belize](../assets/photo/belize/belize-13.jpg)
+
+![Belize](../assets/photo/belize/belize-14.jpg)
+
+![Belize](../assets/photo/belize/belize-15.jpg)
+
+![Belize](../assets/photo/belize/belize-16.jpg)
+
+![Belize](../assets/photo/belize/belize-17.jpg)
+
+![Belize](../assets/photo/belize/belize-18.jpg)
