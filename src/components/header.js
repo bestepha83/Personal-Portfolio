@@ -1,10 +1,10 @@
 import React, { useContext } from "react"
 import Context from '../store/context'
+import { useTheme } from "@emotion/react"
 import '../styles/styles.scss'
 import styled from 'styled-components'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
 
 const ColorMode = styled.button`
   cursor: pointer;
@@ -74,7 +74,8 @@ const MenuLinks = styled.nav`
 `
 
 const Header = props => {
-  const { dispatch } = useContext(Context)
+  const { state, dispatch } = useContext(Context)
+  const theme = useTheme()
   const [nav, setToggleNav] = React.useState(false)
   const [button, setToggleButton] = React.useState(false)
   const linkStyles = {

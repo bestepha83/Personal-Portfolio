@@ -16,7 +16,25 @@ const Layout = props => {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-          }    
+          }
+
+          body, .navigation {
+            background-color: ${state.isDark
+              ? theme.dark.background
+              : theme.light.background};
+            }
+          
+          h1, h2, h3, h4, h5, h6, p, li, a {
+            color: ${state.isDark
+            ? theme.dark.color
+            :theme.light.color};
+          }
+          .burger div {
+            background-color: ${state.isDark
+              ? theme.light.background
+              : theme.dark.background};
+          }
+
         `}
       />
       <Header />

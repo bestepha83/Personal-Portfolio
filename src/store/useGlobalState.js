@@ -15,7 +15,7 @@ const reducer = (state, action) => {
 }
 
 const useGlobalState = () => {
-    const[state, dispatch] = useReducer(reducer, {
+    const [state, dispatch] = useReducer(reducer, {
         isDark: storage.getItem("isDark") ? JSON.parse(storage.getItem("isDark")) : false,
     })
 
