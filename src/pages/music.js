@@ -15,20 +15,20 @@ const BlogIndex = ({ data }) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="music"
+        title="Music"
         keywords={[
-          `music`,
+          `Music`,
         ]}
         description="My coding music"
       />
 
       <section className = "music-banner">
         <h1>Music</h1>
-        <h4>I have been in multiple bands, and you can view some of them here.</h4>
+        <h4>I like music v much, and you can view some of them here.</h4>
       </section>
       <section className = "music-main">
         <h2>Bands</h2>
-        <div className="music-feed">
+        <div className="project-feed">
           {music.map(({ node }) => {
             musicCounter++
             return (

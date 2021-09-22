@@ -5,7 +5,7 @@ import Header from "./header"
 
 const Layout = props => {
   const { children } = props
-  const { state } = useContext(Context)
+  const { state, dispatch } = useContext(Context)
   const theme = useTheme()
   const [toggleNav] = React.useState(false)
   return (
@@ -16,23 +16,6 @@ const Layout = props => {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-          }
-
-          body, .navigation {
-            background-color: ${state.isDark
-              ? theme.dark.background
-              : theme.light.background};
-            }
-          
-          h1, h2, h3, h4, h5, h6, p, li, a {
-            color: ${state.isDark
-            ? theme.dark.color
-            :theme.light.color};
-          }
-          .burger div {
-            background-color: ${state.isDark
-              ? theme.light.background
-              : theme.dark.background};
           }
 
         `}
