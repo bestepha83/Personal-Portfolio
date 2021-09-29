@@ -5,6 +5,22 @@
     align-items: center;
 }
 
+$background-color: rgb(255, 247, 236);
+$hover-card-color: rgb(255, 243, 226);
+$green: rgb(91, 182, 137);
+$blue: rgb(39, 63, 116);
+$black: #181818;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background-color;
+}
+
 // NAVIGATION //
 
 .site-head-container {
@@ -58,7 +74,7 @@
             .current-page {
                 .current-page-items {
                     h2 {
-                        font-size: 1rem;
+                        font-size: 0.8rem;
                     }                    
                 }
             }
@@ -71,7 +87,7 @@
                         height: 0.01rem;
                     }
                     h2 {
-                        font-size: 1rem;
+                        font-size: 0.8rem;
                         margin: 0 20px;
                     }
                 }
@@ -84,7 +100,7 @@
             width: 100%;
             height: 100%;
             transition: 0.8s ease-in-out;
-            background-color: white;
+            background-color: $background-color;
             .navigation {
                 display: flex;
                 justify-content: flex-start;
@@ -98,33 +114,33 @@
                         list-style: none;
                         &:after {
                             position: absolute;
-                            top: -290px;
-                            left: 300px;
+                            top: -100px;
+                            left: 400px;
                             display: block;
                             width: 80vw;
-                            height: 80vh;
+                            height: 50vh;
                             background-repeat: no-repeat;
-                            background-size: 80vh;
+                            background-size: 50vh;
                         }
                         &:hover {
                             position: relative;
                         }
-                        // &:hover:nth-child(2):after {
-                        //     content: "";
-                        //     background-image: url("../images/yo.jpg");
-                        // }
-                        // &:hover:nth-child(3):after {
-                        //     content: "";
-                        //     background-image: url("../images/photo/people.png");                        
-                        // }
-                        // &:hover:nth-child(4):after {
-                        //     content: "";
-                        //     background-image: url("../images/guitar.jpg");                        
-                        // }
-                        // &:hover:nth-child(5):after {
-                        //     content: "";
-                        //     background-image: url("../images/yo.jpg");
-                        // }
+                        &:hover:nth-child(2):after {
+                            content: "";
+                            background-image: url("../images/design.jpg");
+                        }
+                        &:hover:nth-child(3):after {
+                            content: "";
+                            background-image: url("../images/photo.jpg");                        
+                        }
+                        &:hover:nth-child(4):after {
+                            content: "";
+                            background-image: url("../images/guitar.jpg");                        
+                        }
+                        &:hover:nth-child(5):after {
+                            content: "";
+                            background-image: url("../images/design.jpg");
+                        }
                         a {
                             font-size: 3rem;
                             text-decoration: none;
@@ -220,7 +236,6 @@
     @include flexCenter();
     flex-direction: column;
     height: 100vh;
-    border-top: 4px solid;
     h4 {
         font-size: 6rem;
         -webkit-text-stroke: 1px;
@@ -242,8 +257,8 @@
             button {
                 font-size: 1.1rem;
                 background-color: transparent;
-                color: rgb(91, 182, 137);
-                border: 2px solid rgb(91, 182, 137);
+                color: $green;
+                border: 2px solid $green;
                 padding: 0.75rem 2.3rem;
                 &:hover {
                     cursor: pointer;
@@ -252,12 +267,15 @@
         }
     }
 }
+.home-photo, .home-music {
+    background-color: $background-color;
+}
 
 // PHOTOGRAPHY PAGE //
 .photo-banner {
     height: 100vh;
     @include flexCenter();
-    background-color: rgb(91, 182, 137);
+    // background-color: ;
     h1 {
         font-size: 8rem;
         -webkit-text-stroke: 1px;
@@ -283,7 +301,8 @@
         text-decoration: none;
         cursor: pointer;
         &:hover {
-            background-color: rgb(255, 250, 102);
+            color: $background-color;
+            background-color: $black;
         }
         .col-2 {
             @include flexCenter();
@@ -328,7 +347,8 @@
                 transition: 0.3s ease;
                 &:hover {
                     cursor: pointer;
-                    background-color: rgb(244, 244, 244);
+                    color: $background-color;
+                    background-color: $black;
                 }
                 .photo-card-image {
                     @include flexCenter();
@@ -419,7 +439,7 @@
     @include flexCenter();
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(91, 182, 137);
+    // background-color: rgb(91, 182, 137);
     h1 {
         font-size: 8rem;
         -webkit-text-stroke: 1px;
@@ -462,7 +482,8 @@
                 color: black;
                 transition: 0.2s ease;
                 &:hover {
-                    background-color: rgb(244, 244, 244);
+                    color: $background-color;
+                    background-color: $black;
                     cursor: pointer;
                 }
                 .project-card-image {
@@ -532,7 +553,7 @@
     @include flexCenter();
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(91, 182, 137);
+    // background-color: rgb(91, 182, 137);
     h1 {
         font-size: 8rem;
         -webkit-text-stroke: 1px;
@@ -626,7 +647,7 @@
     @include flexCenter();
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(91, 182, 137);
+    // background-color: rgb(91, 182, 137);
     h1 {
         font-size: 8rem;
         -webkit-text-stroke: 1px;

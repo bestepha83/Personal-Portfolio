@@ -13,16 +13,16 @@ const IndexPage = () => (
       <h1>Good Afternoon! I'm Ben, and this is my website.</h1>
       <div className = "banner-headshot">
         <StaticImage
-          src="../images/ben-banner.jpg" alt = "Headshot"
+          src="../images/banner.jpg" alt = "Headshot"
         />
       </div>
     </section>
-    <section className = "home-section">
+    <section className = "home-section home-photo">
       <h4>Photography</h4>
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
-            src="../images/banner-headshot.png" alt = "Headshot"
+            src="../images/guitar.jpg" alt = "Headshot"
           />
         </div>
         <div className = "col-6">
@@ -52,17 +52,17 @@ const IndexPage = () => (
         </div>
         <div className = "col-6">
           <StaticImage
-            src="../images/banner-headshot.png" alt = "Headshot"
+            src="../images/guitar.jpg" alt = "Headshot"
           />
         </div>
       </div>
     </section>
-    <section className = "home-section">
+    <section className = "home-section home-music">
       <h4>Music</h4>
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
-            src="../images/banner-headshot.png" alt = "Headshot"
+            src="../images/guitar.jpg" alt = "Headshot"
           />
         </div>
         <div className = "col-6">
@@ -92,7 +92,7 @@ const IndexPage = () => (
         </div>
         <div className = "col-6">
           <StaticImage
-            src="../images/banner-headshot.png" alt = "Headshot"
+            src="../images/guitar.jpg" alt = "Headshot"
           />
         </div>
       </div>
