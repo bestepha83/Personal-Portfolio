@@ -3,7 +3,7 @@ title: Cal Poly Entrepreneurs
 category: code
 date: "2020-10-15"
 thumbnail: ../assets/code/entrepreneur/entrepreneur-banner.png
-description: Website migration and redesign for improved sustainability, branding, and design
+description: Website Migration and Redesign for Cal Poly Entrepreneurs
 ---
 
 ![](../assets/code/entrepreneur/entrepreneur-1.png)

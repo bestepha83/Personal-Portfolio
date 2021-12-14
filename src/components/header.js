@@ -96,26 +96,30 @@ const Header = props => {
   return (
     <header className="site-head-container">
       <div className = "site-head-top">
-        <Link 
-          className = "logo"
-          to={`/`}
-        >
-          <h2>Ben Stephan</h2>
-        </Link>
-        <ColorMode
-          className = "color-mode" 
-          button = {button}
-          onClick={() =>  dispatch({type: "TOGGLE_DARK_MODE"})}
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.09 110.96" onClick={() =>  setToggleButton(!button)}>
-          <defs></defs>
-            <g id="Layer_2" data-name="Layer 2">
-            <g id="Layer_1-2" data-name="Layer 1" className = "isolate">
-            <path className="cls-1" d="M124.5,59.35c-5,33.77-32.51,54.72-62.28,51.24C32.34,106.87,4.42,85.94.4,59.35S23.82,3.89,62.68.31,129.54,25.72,124.5,59.35Z"/>
-            </g>
-            </g>
-          </svg>
-        </ColorMode>
+        <div className = "site-head-top-content">
+          <Link 
+            className = "logo"
+            to={`/`}
+          >
+            <div className = "square1"></div>
+            <div className = "square2"></div>
+            <h2>Ben Stephan</h2>
+          </Link>
+          <ColorMode
+            className = "color-mode" 
+            button = {button}
+            onClick={() =>  dispatch({type: "TOGGLE_DARK_MODE"})}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.09 110.96" onClick={() =>  setToggleButton(!button)}>
+            <defs></defs>
+              <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1" className = "isolate">
+              <path className="cls-1" d="M124.5,59.35c-5,33.77-32.51,54.72-62.28,51.24C32.34,106.87,4.42,85.94.4,59.35S23.82,3.89,62.68.31,129.54,25.72,124.5,59.35Z"/>
+              </g>
+              </g>
+            </svg>
+          </ColorMode>
+        </div>
       </div>
       <div className="site-head-left">
         <div className = "page-info">
@@ -144,16 +148,6 @@ const Header = props => {
                   activeStyle={activeStyles}
                 >
                   Home
-                </Link>
-              </li>
-              <li className="nav-elements">
-                <Link
-                  to={`/resume`}
-                  style={linkStyles}
-                  activeStyle={activeStyles}
-                  partiallyActive={true}
-                >
-                  Resume
                 </Link>
               </li>
               <li className="nav-elements">
@@ -191,6 +185,16 @@ const Header = props => {
                   activeStyle={activeStyles}
                 >
                   Design
+                </Link>
+              </li>
+              <li className="nav-elements">
+                <Link
+                  to={`/resume`}
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                  partiallyActive={true}
+                >
+                  Resume
                 </Link>
               </li>
               <li className="nav-elements">

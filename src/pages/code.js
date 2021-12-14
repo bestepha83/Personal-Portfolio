@@ -24,7 +24,6 @@ const BlogIndex = ({ data }) => {
 
       <section className = "code-banner">
         <h1>Programming</h1>
-        <h4>I have created created multiple projects, and you can view some of them here.</h4>
       </section>
       <section className = "code-main">
         <h2>Websites</h2>
