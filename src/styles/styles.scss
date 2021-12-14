@@ -5,8 +5,8 @@
     align-items: center;
 }
 
-$background-color: rgb(255, 247, 236);
-$hover-card-color: rgb(255, 243, 226);
+$background-color: rgb(255, 242, 224);
+$hover-card-color: rgb(254, 235, 210);
 $green: rgb(91, 182, 137);
 $blue: rgb(39, 63, 116);
 $black: #181818;
@@ -482,8 +482,7 @@ body {
                 color: black;
                 transition: 0.2s ease;
                 &:hover {
-                    color: $background-color;
-                    background-color: $black;
+                    background-color: $hover-card-color;
                     cursor: pointer;
                 }
                 .project-card-image {
@@ -534,6 +533,7 @@ body {
         flex-direction: column;
         .project-content-body {
             width: 80%;
+            background-color: transparent;
             img {
                 width: 200px;
             }
@@ -656,7 +656,10 @@ body {
 }
 .music-main {
     @include flexCenter();
+    flex-direction: column;
+    height: auto;
     h2 {
+        margin: 1rem;
         font-size: 5rem;
         -webkit-text-stroke: 1px;
         -webkit-text-fill-color: transparent;          
@@ -668,8 +671,55 @@ body {
         .music-card {
             @include flexCenter();
             width: 50%;
+            height: 80vh;
             margin-bottom: 2rem;
+
             .music-card-image {
+                img {
+                    width: 30vw;
+                }
+            }
+        }
+    }        
+}
+
+
+
+
+// RESUME PAGE //
+
+.resume-banner {
+    @include flexCenter();
+    flex-direction: column;
+    height: 100vh;
+    // background-color: rgb(91, 182, 137);
+    h1 {
+        font-size: 8rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.resume-main {
+    @include flexCenter();
+    flex-direction: column;
+    height: auto;
+    h2 {
+        margin: 1rem;
+        font-size: 5rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-fill-color: transparent;          
+    }
+    .resume-feed {
+        @include flexCenter();
+        flex-wrap: wrap;
+        width: 80%;
+        .resume-card {
+            @include flexCenter();
+            width: 50%;
+            height: 80vh;
+            margin-bottom: 2rem;
+
+            .resume-card-image {
                 img {
                     width: 30vw;
                 }
@@ -704,14 +754,14 @@ body {
                 flex-direction: column;
                 .contact-input {
                     label {
-                        color: rgb(91, 182, 137);
+                        color: $black;
                         display: block;
                         font-size: 0.9em;
                         margin: 0;
                         input, select, textarea {
-                            color: rgb(91, 182, 137);
+                            color: $black;
                             border: none;
-                            border: solid 1px rgb(91, 182, 137);
+                            border: solid 1px $black;
                             background-color: transparent;
                             text-decoration: none;
                             padding: 1rem 0.5rem;

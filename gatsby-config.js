@@ -93,6 +93,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/resume`,
+        name: `resume`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-build-date`,
       options: {
         formatAsDateString: true, // boolean, defaults to true - if false API will return unformatted string from new Date()

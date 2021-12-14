@@ -18,6 +18,26 @@ const IndexPage = () => (
       </div>
     </section>
     <section className = "home-section home-photo">
+      <h4>Resume</h4>
+      <div className = "home-content">
+        <div className = "col-6">
+          <StaticImage
+            src="../images/guitar.jpg" alt = "Headshot"
+          />
+        </div>
+        <div className = "col-6">
+          <p>My qualifications, laid out</p>
+          <Link
+            to={`/resume`}
+          >
+            <button>
+              Explore
+            </button>
+          </Link>
+        </div>
+      </div>
+    </section>
+    <section className = "home-section home-photo">
       <h4>Photography</h4>
       <div className = "home-content">
         <div className = "col-6">

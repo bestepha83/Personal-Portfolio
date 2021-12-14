@@ -148,6 +148,16 @@ const Header = props => {
               </li>
               <li className="nav-elements">
                 <Link
+                  to={`/resume`}
+                  style={linkStyles}
+                  activeStyle={activeStyles}
+                  partiallyActive={true}
+                >
+                  Resume
+                </Link>
+              </li>
+              <li className="nav-elements">
+                <Link
                   to={`/code`}
                   style={linkStyles}
                   activeStyle={activeStyles}
