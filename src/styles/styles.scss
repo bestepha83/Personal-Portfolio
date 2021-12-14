@@ -10,7 +10,7 @@
 $background-color: rgb(245, 245, 245);
 $hover-card-color: rgb(230, 230, 230);
 $green: rgb(91, 182, 137);
-$blue: rgb(39, 63, 116);
+$blue: rgb(63, 99, 177);
 $black: #181818;
 
 * {
@@ -53,13 +53,19 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                &:hover {
+                    .square1 {
+                        animation: rotate1 1.5s ease-in-out;
+                    }
+                    .square2 {
+                        animation: rotate2 1.5s ease-in-out;
+                    }
+                }
                 .square1, .square2 {
                     position: relative;
                     height: 30px;
                     width: 30px;
                     border: #181818 1px solid;
-                    // background: linear-gradient(-45deg, #green, #blue);
-                    // animation: gradient 20s ease infinite;
                 }
                 
                 .square1 {
@@ -214,15 +220,26 @@ body {
         transform: translateX(0)
     }
 }
-@keyframes gradient {
+@keyframes rotate1 {
     0% {
-        background-position: 0% 50%;
+        transform: rotate(15deg);
     }
     50% {
-        background-position: 100% 50%;
+        transform: rotate(-375deg);
     }
     100% {
-        background-position: 0% 50%;
+        transform: rotate(15deg);
+    }
+}
+@keyframes rotate2 {
+    0% {
+        transform: rotate(80deg);
+    }
+    50% {
+        transform: rotate(440deg);
+    }
+    100% {
+        transform: rotate(80deg);
     }
 }
 
@@ -755,25 +772,96 @@ body {
         -webkit-text-stroke: 1px;
         -webkit-text-fill-color: transparent;          
     }
-    .resume-feed {
+    .experience {
         @include flexCenter();
-        flex-wrap: wrap;
-        width: 80%;
-        .resume-card {
-            @include flexCenter();
-            width: 50%;
-            height: 80vh;
-            margin-bottom: 2rem;
-
-            .resume-card-image {
-                img {
-                    width: 30vw;
+        flex-direction: column;
+        font-family: 'Lato';
+        width: 100%;
+        margin: 1rem 0;
+        h3 {
+            font-size: 3.5rem;
+        }
+        h4 {
+            font-size: 2.5rem;
+        }
+        .experience-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* The actual timeline (the vertical ruler) */
+            .timeline {
+                position: relative;
+                &::after {
+                    /* The actual timeline (the vertical ruler) */
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    background-color: $black;
+                    top: 0;
+                    bottom: 0;
+                    left: 20%;
+                    margin-left: -3px;
+                }
+                /* Container around content */
+                .container {
+                    padding: 10px 40px;
+                    position: relative;
+                    left: 20%;
+                    background-color: inherit;
+                    width: 50%;
+                    /* The circles on the timeline */
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 25px;
+                        height: 25px;
+                        left: -15px;
+                        background-color: $background-color;
+                        border: 1px solid $black;
+                        top: 100px;
+                        border-radius: 50%;
+                        z-index: 1;
+                    }
+                    /* The actual content */
+                    .content {
+                        padding: 20px 40px;
+                        color: $background-color;
+                        background-color: $blue;
+                        position: relative;
+                        border-radius: 6px;
+                        h4 {
+                            font-size: 2.25rem;
+                        }
+                        h5 {
+                            font-size: 1.25rem;
+                        }
+                    }
                 }
             }
-        }
-    }        
-}
+            .experience-description {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                .experience-description-content {
+                    margin: 1rem 0;
+                    width: 90%;
+                    h4 {
+                        font-size: 2.5rem;
+                    }
+                    ul {
+                        li {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
 
+            }
+        }
+
+
+    }
+}
 
 
 // CONTACT //
