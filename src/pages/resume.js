@@ -20,10 +20,9 @@ const BlogIndex = ({ data }) => {
       />
 
       <section className = "resume-banner">
-        <h1>Resume</h1>
-      </section>
-      <section className = "resume-banner">
-        <h4>I am always striving to improve myself, whether that's in my technical skillset or my professional development</h4>
+        <div className = "resume-banner-content">
+          <h2>I am always striving to improve myself, whether that's in my technical skillset or my professional development</h2>
+        </div>
       </section>
       <section className = "resume-main">
         <h2>Professional Experience</h2>

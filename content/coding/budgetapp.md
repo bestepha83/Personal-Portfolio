@@ -6,7 +6,7 @@ thumbnail: ../assets/code/budgetapp/budget-banner.png
 description: Financial Budgeting App using Django
 ---
 
-You can view the website here: https://bestepha-budget-app.herokuapp.com/
+You can view the website <a href = "https://bestepha-budget-app.herokuapp.com/">Here</a>
 
 For this project, I learned a new python framework, Django, to create a financial budgeting web application.
 

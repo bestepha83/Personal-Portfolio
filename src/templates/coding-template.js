@@ -17,6 +17,10 @@ class BlogPostTemplate extends React.Component {
           title={project.frontmatter.title}
           description={project.frontmatter.description || project.excerpt}
         />
+        <div className = "circle1"></div>
+        <div className = "circle2"></div>
+        <div className = "circle3"></div>
+        <div className = "circle4"></div>
         <article className = "project-content">
           <div className="project-banner">
             <h1 className="project-content-title">{project.frontmatter.title}</h1>

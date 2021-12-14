@@ -499,19 +499,95 @@ body {
 
 // PROGRAMMING PAGE //
 
+
+.circle1, .circle2, .circle3, .circle4 {
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(100px);
+    position: fixed;
+}
+.circle1 {
+    height: 20rem;
+    width: 20rem;
+    background-color: $blue;
+    top: 20vh;
+    left: 0%;
+    animation: moveCircle2 70s ease infinite;
+}
+.circle2 {
+    height:25rem;
+    width: 25rem;
+    background-color: $green;
+    top: 50vh;
+    left: -10%;
+    animation: moveCircle1 75s ease infinite;
+}
+.circle3 {
+    height: 20rem;
+    width: 20rem;
+    background-color: $blue;
+    top: 50vh;
+    right: -10%;
+    animation: moveCircle1 75s ease infinite;
+}
+.circle4 {
+    height: 25rem;
+    width: 25rem;
+    background-color: $green;
+    top: 20vh;
+    right: 0%;
+    animation: moveCircle2 70s ease infinite;
+}
+
+@keyframes moveCircle1 {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(30vh);
+    }
+    75% {
+        transform: translateY(-50vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes moveCircle2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30vh);
+    }
+    75% {
+        transform: translateY(40vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .code-banner {
     @include flexCenter();
-    flex-direction: column;
     height: 100vh;
-    h1 {
-        font-size: 8rem;
-        -webkit-text-stroke: 1px;
-        -webkit-text-fill-color: transparent;
+    width: 100%;
+    font-family: 'Lato';
+    .code-banner-content {
+        @include flexCenter();
+        flex-direction: column;
+        text-align: center;
+        width: 70%;
+        h1 {
+            @include flexCenter();
+            font-size: 5rem;
+            background: -webkit-linear-gradient(-45deg, $green 5%,$blue 53%, $blue 91%);
+            -webkit-background-clip: text;
+            -webkit-text-stroke: 4px transparent;
+            -webkit-text-fill-color: $background-color;
+        }     
     }
-    h4 {
-        width: 80%;
-        font-size: 2rem;
-    }
+
 }
 
 .code-main {
@@ -545,7 +621,7 @@ body {
                 color: black;
                 transition: 0.2s ease;
                 &:hover {
-                    background-color: $hover-card-color;
+                    transform: scale(1.1);
                     cursor: pointer;
                 }
                 .project-card-image {
@@ -753,14 +829,21 @@ body {
 
 .resume-banner {
     @include flexCenter();
-    flex-direction: column;
     height: 100vh;
-    // background-color: rgb(91, 182, 137);
-    h1 {
-        font-size: 8rem;
-        -webkit-text-stroke: 1px;
-        -webkit-text-fill-color: transparent;
+    width: 100%;
+    .resume-banner-content {
+        @include flexCenter();
+        flex-direction: column;
+        text-align: center;
+        width: 70%;
+        h2 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 2rem;
+        }        
     }
+
 }
 .resume-main {
     @include flexCenter();

@@ -21,9 +21,14 @@ const BlogIndex = ({ data }) => {
         ]}
         description="My coding projects"
       />
-
+      <div className = "circle1"></div>
+      <div className = "circle2"></div>
+      <div className = "circle3"></div>
+      <div className = "circle4"></div>
       <section className = "code-banner">
-        <h1>Programming</h1>
+        <div className = "code-banner-content">
+          <h1>I design and develop websites for startups, clubs, and for personal projects.</h1>
+        </div>
       </section>
       <section className = "code-main">
         <h2>Websites</h2>
