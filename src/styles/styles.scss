@@ -9,8 +9,8 @@
 
 $background-color: rgb(245, 245, 245);
 $hover-card-color: rgb(230, 230, 230);
-$green: rgb(91, 182, 137);
-$blue: rgb(63, 99, 177);
+$green: #B1E2C6;
+$blue: #B1CCE2;
 $black: #181818;
 
 * {
@@ -21,6 +21,9 @@ $black: #181818;
 
 body {
     background-color: $background-color;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato';
 }
 
 // NAVIGATION //
@@ -277,18 +280,43 @@ body {
     @include flexCenter();
     h1 {
         width: 80%;
-        font-size: 8rem;
-        font-family: 'lora';
-        -webkit-text-stroke: 1px;
-        -webkit-text-fill-color: transparent;
+        font-size: 7rem;
+        font-family: 'lato';
         z-index: 3;
+    }
+    .banner-title-1 {
+        position: absolute;
+        top: 15%;
+    }
+    .banner-title-2 {
+        position: absolute;
+        top: 40%;
+        left: 45%;
+    }
+    h3 {
+        font-size: 2rem;
+        position: absolute;
+        top: 65%;
+        left: 45%;
     }
     .banner-headshot {
         position: absolute;
         bottom: 80px;
-        right: 150px;
-        width: 30%;
+        left: 250px;
+        width: 23%;
+        transform: rotateX(180deg) rotate(-180deg);
         z-index: 2;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -50px;
+            left: 0px;
+            height: 25rem;
+            width: 25rem;
+            border-radius: 50%;
+            background-color: $blue;
+            z-index: -1;
+        }
         img {
             width: 100%;
         }
@@ -303,8 +331,6 @@ body {
     height: 100vh;
     h4 {
         font-size: 6rem;
-        -webkit-text-stroke: 1px;
-        -webkit-text-fill-color: transparent;
     }
     .home-content {
         display: flex;
@@ -332,19 +358,27 @@ body {
         }
     }
 }
-.home-photo, .home-music {
-    background-color: $background-color;
-}
 
 // PHOTOGRAPHY PAGE //
 .photo-banner {
     height: 100vh;
     @include flexCenter();
-    // background-color: ;
+    flex-direction: column;
     h1 {
         font-size: 8rem;
-        -webkit-text-stroke: 1px;
-        -webkit-text-fill-color: transparent;
+        transform:translateY(-10rem);
+
+    }
+    .photo-banner-img {
+        .photo-img-1 {
+            height: 20rem;
+            width: 15rem;
+            transform: rotate(15deg) translateY(10rem);
+        }
+        .photo-img-2 {
+            width: 20rem;
+            transform: rotate(-15deg) translateY(-10rem);
+        }
     }
 }
 
@@ -386,8 +420,6 @@ body {
     flex-direction: column;
     h2 {
         font-size: 7rem;
-        -webkit-text-stroke: 1px;
-        -webkit-text-fill-color: transparent;
     }
 
     /// PHOTO FEED ///
@@ -411,7 +443,7 @@ body {
                 transition: 0.3s ease;
                 &:hover {
                     cursor: pointer;
-                    background-color: $hover-card-color;
+                    transform: scale(1.1);
                 }
                 .photo-card-image {
                     @include flexCenter();
@@ -595,8 +627,6 @@ body {
     flex-direction: column;
     h2 {
         font-size: 7rem;
-        -webkit-text-stroke: 1px;
-        -webkit-text-fill-color: transparent;
     }
 
     /// PROJECT FEED ///
@@ -784,13 +814,42 @@ body {
 
 .music-banner {
     @include flexCenter();
-    flex-direction: column;
     height: 100vh;
-    // background-color: rgb(91, 182, 137);
-    h1 {
-        font-size: 8rem;
-        -webkit-text-stroke: 1px;
-        -webkit-text-fill-color: transparent;
+    width: 100%;
+    .banner1 {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        width: 60%;
+        background-color: $blue;
+        .banner1-content {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            h1 {
+                font-size: 6rem;
+                margin-bottom: 1rem;
+            }
+            h4 {
+                font-size: 2rem;
+            }
+        }
+    }
+    .banner2 {
+        @include flexCenter();
+        flex-direction: column;
+        height: 100%;
+        width: 40%;
+        background: -webkit-linear-gradient($green, $green);
+        .music-banner-mask {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            z-index: 3
+        }
     }
 }
 .music-main {
@@ -799,9 +858,7 @@ body {
     height: auto;
     h2 {
         margin: 1rem;
-        font-size: 5rem;
-        -webkit-text-stroke: 1px;
-        -webkit-text-fill-color: transparent;          
+        font-size: 5rem;         
     }
     .music-feed {
         @include flexCenter();

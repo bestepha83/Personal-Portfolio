@@ -6,16 +6,23 @@ import { StaticImage } from "gatsby-plugin-image"
 
 
 const IndexPage = () => (
+  
   <Layout>
-    <SEO title="Home" />
 
+    <SEO title="Home" />
+    <div className = "circle1"></div>
+    <div className = "circle2"></div>
+    <div className = "circle3"></div>
+    <div className = "circle4"></div>
     <section className = "banner">
-      <h1>Good Afternoon! I'm Ben, and this is my website.</h1>
+      <h1 className = "banner-title-1">Hey there!</h1>
       <div className = "banner-headshot">
         <StaticImage
-          src="../images/banner.jpg" alt = "Headshot"
+          src="../images/banner.png" alt = "Headshot"
         />
       </div>
+      <h1 className = "banner-title-2">I'm Ben</h1>
+      <h3>Programmer, Designer, Musician, and Photographer</h3>
     </section>
     <section className = "home-section home-photo">
       <h4>Resume</h4>

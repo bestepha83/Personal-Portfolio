@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 import PostCard from "../components/photoCard"
 
 import '../styles/styles.scss'
+import { StaticImage } from "gatsby-plugin-image"
+
 
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }) => {
@@ -22,12 +24,27 @@ const BlogIndex = ({ data }) => {
         ]}
         description="Photography"
       />
-
+      <div className = "circle2"></div>
+      <div className = "circle4"></div>
       <section className = "photo-banner">
+        <div className = "photo-banner-img">
+          <StaticImage
+            src="../images/photo.jpg"
+            alt = "Headshot"
+            className = "photo-img-1"
+          />        
+        </div>
+        <div className = "photo-banner-img">
+          <StaticImage
+            src="../images/guitar.jpg"
+            alt = "Headshot"
+            className = "photo-img-2"
+          />        
+        </div>
         <h1>Photography</h1>
       </section>
       <section className = "photo-main">
-        <h2>Projects</h2>
+        <h2>Destinations</h2>
         <div className="photo-feed">
           {photos.map(({ node }) => {
             photosCounter++

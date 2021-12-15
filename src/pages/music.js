@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import PostCard from "../components/musicCard"
 
 import '../styles/styles.scss'
+import { StaticImage } from "gatsby-plugin-image"
 
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -23,8 +24,20 @@ const BlogIndex = ({ data }) => {
       />
 
       <section className = "music-banner">
-        <h1>Music</h1>
-        <h4>I like music v much, and you can view some of them here.</h4>
+        <div className = "banner1">
+          <div className = "banner1-content">
+            <h1>Sounds like Honey</h1>
+            <h4>Blues, Jazz, Soul</h4>
+          </div>
+        </div>
+        <div className = "banner2">
+          <StaticImage
+            src="../images/guitar.jpg"
+            alt = "Headshot"
+            className = ""
+          />
+          <div className = "music-banner-mask"></div>
+        </div>
       </section>
       <section className = "music-main">
         <h2>Bands</h2>
