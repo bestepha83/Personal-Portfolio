@@ -5,8 +5,9 @@ import SEO from "../components/seo"
 
 import '../styles/styles.scss'
 
+import { StaticImage } from "gatsby-plugin-image"
+
 import { navigateTo } from "gatsby-link"
-// import contactImage from "../images/contact.jpg"
 
 function encode(data) {
   const formData = new FormData()
@@ -69,7 +70,9 @@ export default class Contact extends React.Component {
           <h1>Let's Connect!</h1>
           <div className = "contact-content">
             <div className = "contact-col-6">
-            
+              <StaticImage
+                src="../images/banner.png" alt = "Headshot"
+              />
             </div>
             <div className="contact-col-6">
               <form

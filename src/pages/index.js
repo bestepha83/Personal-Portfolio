@@ -24,32 +24,17 @@ const IndexPage = () => (
       <h1 className = "banner-title-2">I'm Ben</h1>
       <h3>Programmer, Designer, Musician, and Photographer</h3>
     </section>
-    <section className = "home-section home-photo">
-      <h4>Resume</h4>
-      <div className = "home-content">
-        <div className = "col-6">
-          <StaticImage
-            src="../images/guitar.jpg" alt = "Headshot"
-          />
-        </div>
-        <div className = "col-6">
-          <p>My qualifications, laid out</p>
-          <Link
-            to={`/resume`}
-          >
-            <button>
-              Explore
-            </button>
-          </Link>
-        </div>
+    <section className = "home-section">
+      <div className = "home-mission">
+        <h4>Fueled by a passion to learn, I am always looking for new opportunities and hobbies to master. I'm curious and I like a lot of cool stuff.</h4>
       </div>
     </section>
     <section className = "home-section home-photo">
-      <h4>Photography</h4>
+      <h3>Photography</h3>
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
-            src="../images/guitar.jpg" alt = "Headshot"
+            src="../images/photo.jpg" alt = "Headshot"
           />
         </div>
         <div className = "col-6">
@@ -65,8 +50,13 @@ const IndexPage = () => (
       </div>
     </section>
     <section className = "home-section">
-      <h4>Programming</h4>
+      <h3>Programming</h3>
       <div className = "home-content">
+        <div className = "col-6">
+          <StaticImage
+            src="../images/code.png" alt = "Headshot"
+          />
+        </div>
         <div className = "col-6">
           <p>I like to do programming for fun. Check out my stuff!</p>
           <Link
@@ -77,15 +67,10 @@ const IndexPage = () => (
             </button>
           </Link>          
         </div>
-        <div className = "col-6">
-          <StaticImage
-            src="../images/guitar.jpg" alt = "Headshot"
-          />
-        </div>
       </div>
     </section>
     <section className = "home-section home-music">
-      <h4>Music</h4>
+      <h3>Music</h3>
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
@@ -105,8 +90,13 @@ const IndexPage = () => (
       </div>
     </section>
     <section className = "home-section">
-      <h4>Design</h4>
+      <h3>Design</h3>
       <div className = "home-content">
+        <div className = "col-6">
+          <StaticImage
+            src="../images/design.jpg" alt = "Headshot"
+          />
+        </div>
         <div className = "col-6">
           <p>I like to do design for fun. Check out my stuff!</p>
           <Link
@@ -116,11 +106,6 @@ const IndexPage = () => (
               Explore
             </button>
           </Link>          
-        </div>
-        <div className = "col-6">
-          <StaticImage
-            src="../images/guitar.jpg" alt = "Headshot"
-          />
         </div>
       </div>
     </section>
