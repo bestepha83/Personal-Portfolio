@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     .photo-banner {
         background-color: $background-color;
-        height: 200vh;
+        height: auto;
         .photo-banner-content {
             display: flex;
             flex-direction: column;
@@ -706,11 +706,13 @@ h1, h2, h3, h4, h5, h6 {
     .project-about {
         @include flexCenter();
         flex-direction: column;
+        background-color: transparent;
         .project-content-body {
             width: 80%;
             background-color: transparent;
             img {
                 width: 200px;
+                background-color: transparent;
             }
             p {
                 font-size: 2rem;
@@ -950,7 +952,6 @@ h1, h2, h3, h4, h5, h6 {
         bottom: 25px;
         background: transparent;
         border: none;
-        z-index: 100;
         &:hover {
             cursor: pointer;
         }

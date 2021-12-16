@@ -6,21 +6,23 @@ thumbnail: ../assets/code/entrepreneur/entrepreneur-banner.png
 description: Website Migration and Redesign for Cal Poly Entrepreneurs
 ---
 
-![](../assets/code/entrepreneur/entrepreneur-1.png)
+![Cal Poly Entrepreneurs](../assets/code/entrepreneur/entrepreneur-1.png)
 
-![](../assets/code/entrepreneur/entrepreneur-2.png)
+Looking for clubs my second-year of college, I happened upon Cal Poly Entrepreneur's website. As I browsed the site, I noticed many bugs and errors, from a disappearing menu on mobile to poor responsiveness.
 
-![](../assets/code/entrepreneur/entrepreneur-3.png)
+![Cal Poly Entrepreneurs](../assets/code/entrepreneur/entrepreneur-2.png)
 
-![](../assets/code/entrepreneur/entrepreneur-4.png)
+![Cal Poly Entrepreneurs](../assets/code/entrepreneur/entrepreneur-3.png)
 
-![](../assets/code/entrepreneur/entrepreneur-5.png)
+![Cal Poly Entrepreneurs](../assets/code/entrepreneur/entrepreneur-4.png)
 
-![](../assets/code/entrepreneur/entrepreneur-6.png)
+![Cal Poly Entrepreneurs](../assets/code/entrepreneur/entrepreneur-5.png)
 
-![](../assets/code/entrepreneur/entrepreneur-7.png)
+![Cal Poly Entrepreneurs](../assets/code/entrepreneur/entrepreneur-6.png)
 
-You can view the website here: https://cpentrepreneurs.com/
+![Cal Poly Entrepreneurs](../assets/code/entrepreneur/entrepreneur-7.png)
+
+You can view the website <a href = "https://cpentrepreneurs.com/">here</a>
 
 Looking for clubs my second-year of college, I happened upon Cal Poly Entrepreneur's website. As I browsed the site, I noticed many bugs and errors, from a disappearing menu on mobile to poor responsiveness.
 

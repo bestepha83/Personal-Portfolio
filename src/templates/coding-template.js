@@ -23,7 +23,6 @@ class BlogPostTemplate extends React.Component {
         <div className = "circle4"></div>
         <article className = "project-content">
           <div className="project-banner">
-            <h1 className="project-content-title">{project.frontmatter.title}</h1>
             <div className="project-image-container">
               {project.frontmatter.thumbnail && (
                 <div className="project-content-image">
@@ -34,11 +33,12 @@ class BlogPostTemplate extends React.Component {
                 </div>
               )}
             </div>
+            <h1 className="project-content-title">{project.frontmatter.title}</h1>
             {project.frontmatter.description && (
               <p class="project-content-excerpt">
                 {project.frontmatter.description}
               </p>
-            )}            
+            )}
           </div>
 
           <div className="project-about">
