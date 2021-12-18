@@ -201,7 +201,6 @@ h1, h2, h3, h4, h5, h6 {
             margin: 0 4rem;
             height: 100%;
             background-color: transparent;
-            // z-index: 100;
         }
 
 
@@ -965,6 +964,7 @@ h1, h2, h3, h4, h5, h6 {
     .resume-section-content {
         @include flexCenter();
         flex-direction: column;
+        text-align: center;
         h2 {
             font-size: 5rem;
         }
@@ -973,6 +973,7 @@ h1, h2, h3, h4, h5, h6 {
 .resume-main {
     @include flexCenter();
     flex-direction: column;
+    text-align: center;
     height: auto;
     h2 {
         margin: 1rem;
@@ -1014,9 +1015,21 @@ h1, h2, h3, h4, h5, h6 {
                         font-size: 2.5rem;
                     }
                     ul {
+                        text-align: left;
                         li {
                             font-size: 2.5rem;
                             margin: 1.5rem 0;
+                            overflow: hidden;
+                            list-style: square;
+                            span {
+                                display: block;
+                                // transform: translateY(200%);
+                                &:active {
+                                    transform: translateY(0%);
+                                    transition: 1s ease-out;
+                                }
+                            }
+
                         }
                     }
                     .skills {

@@ -6,7 +6,7 @@ thumbnail: ../assets/design/surf-v1.png
 description: A blend of punk rock and surfiness
 ---
 
-Spotify Link: https://open.spotify.com/playlist/13t9d2WJ5qXinedyj0Wg56?si=0bcd10c22b564460
+Spotify <a href = "https://open.spotify.com/playlist/13t9d2WJ5qXinedyj0Wg56?si=0bcd10c22b564460" target="_blank">Link</a>
 
 <h6>Sketch</h6>
 

@@ -70,8 +70,11 @@ const MenuIcon = styled.button`
 
 const MenuLinks = styled.nav`
   z-index: 98;
+  display: ${({nav}) => (nav ? "block": 'none')};
   transform: ${({nav}) => (nav ? "translateX(100vw)": 'translateX(0)')};
 `
+
+
 
 const Header = props => {
   const { state, dispatch } = useContext(Context)
@@ -129,7 +132,6 @@ const Header = props => {
               <h2>Updated {data.currentBuildDate.currentDate}</h2>
               <div className = "date-line"></div>              
             </div>
-            {/* current date for regular pages, past date for dynamic pages */}
           </div>
           <div className = "current-page">
             <div className = 'current-page-items'>
@@ -213,7 +215,7 @@ const Header = props => {
         <MenuIcon nav = {nav} onClick = {() => setToggleNav(!nav)}>
           <div />
           <div />
-          <div /> 
+          <div />
         </MenuIcon>              
       </div>
       </div>

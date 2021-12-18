@@ -7,8 +7,8 @@ import SEO from "../components/seo"
 import '../styles/styles.scss'
 
 const BlogIndex = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title
 
+  const siteTitle = data.site.siteMetadata.title
   return (
     <Layout title={siteTitle}>
       <SEO
@@ -40,10 +40,18 @@ const BlogIndex = ({ data }) => {
             <div className = "experience-description">
               <div className = "experience-description-content">
                 <ul>
-                  <li>Led emerging market project which included sizing and analyzing renewable energy and drainage markets and developing expansion recommendations through a mix of existing products, new product development, and acquisition strategy</li>
-                  <li>Developed a business case and commercial development plan for a new material that would decrease costs by 40% and expand our product portfolio</li>
-                  <li>Worked cross-functionally with leaders across the business to develop executive management presentations relative to customer retention and market strategy</li>
-                  <li>Supported executive team through performing M&A-related tasks including identifying acquisition targets, competitive research and miscellaneous data analysis projects in addition to ad hoc initiatives as assigned</li>
+                  <li>
+                    <span>Led emerging market project which included sizing and analyzing renewable energy and drainage markets and developing expansion recommendations through a mix of existing products, new product development, and acquisition strategy</span>
+                  </li>
+                  <li>
+                    <span>Developed a business case and commercial development plan for a new material that would decrease costs by 40% and expand our product portfolio</span>
+                  </li>
+                  <li>
+                    <span>Worked cross-functionally with leaders across the business to develop executive management presentations relative to customer retention and market strategy</span>
+                  </li>
+                  <li>
+                    <span>Supported executive team through performing M&A-related tasks including identifying acquisition targets, competitive research and miscellaneous data analysis projects in addition to ad hoc initiatives as assigned</span>
+                  </li>
                 </ul>
               </div>
               <div className = "experience-description-content">
@@ -53,7 +61,9 @@ const BlogIndex = ({ data }) => {
                   <li>Market Research</li>
                   <li>Business Cases</li>
                   <li>Competitive Research</li>
-                  <li>Cost Reduction</li>
+                  <li>Time Management</li>
+                  <li>Project Management</li>
+                  <li>Leading Meetings</li>
                   <li>Customer Retention</li>
                   <li>M&A</li>
                   <li>Market Strategy</li>

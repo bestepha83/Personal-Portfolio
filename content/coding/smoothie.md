@@ -6,4 +6,4 @@ thumbnail: ../assets/code/malajam.png
 description: Ecommerce Site using vanilla Javascript
 ---
 
-<a href = "https://bestepha83.github.io/Smoothie-Shack/">Check it out</a>
+<a href = "https://bestepha83.github.io/Smoothie-Shack/" target="_blank">Check it out</a>

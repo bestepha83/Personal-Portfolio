@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://benportfolio.netlify.app/",
     title: "Ben Stephan",
     description: "Best. Portfolio. Ever.",
     author: "Ben Stephan",
