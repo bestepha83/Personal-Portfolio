@@ -5,6 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { PostWrapper } from "../components/PostElements"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -42,12 +43,12 @@ class BlogPostTemplate extends React.Component {
               </div>            
             </div>
           </div>
-          <div className="photo-about">
+          <PostWrapper className="photo-about">
             <div
               className="photo-content-body"
               dangerouslySetInnerHTML={{ __html: photo.html }}
             />
-          </div>
+          </PostWrapper>
         </article>
       </Layout>
     )
