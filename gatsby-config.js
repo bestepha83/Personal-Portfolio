@@ -104,5 +104,18 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Ben's Portfolio",
+        short_name: "Ben's Portfolio",
+        start_url: "/",
+        background_color: "white",
+        theme_color: "white",
+        display: "standalone",
+        icon: "src/images/circletext.png",
+        crossOrigin: `use-credentials`,
+      },
+    }
   ],
 };

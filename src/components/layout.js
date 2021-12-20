@@ -1,12 +1,9 @@
-import React, { useContext } from "react"
-import { Global, css, useTheme } from "@emotion/react"
-import Context from '../store/context'
+import React from "react"
+import { Global, css } from "@emotion/react"
 import Header from "./header"
 
 const Layout = props => {
   const { children } = props
-  const { state, dispatch } = useContext(Context)
-  const theme = useTheme()
   const [toggleNav] = React.useState(false)
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>

@@ -9,8 +9,6 @@ description: Spain
 
 ![Barcelona](../assets/photo/barcelona/barcelona3.jpg)
 
-<img src = "../assets/photo/barcelona/barcelona3.jpg" className = "post">
-
 ![Barcelona](../assets/photo/barcelona/barcelona4.jpg)
 
 ![Barcelona](../assets/photo/barcelona/barcelona5.jpg)

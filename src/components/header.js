@@ -1,6 +1,4 @@
-import React, { useContext } from "react"
-import Context from '../store/context'
-import { useTheme } from "@emotion/react"
+import React from "react"
 import '../styles/styles.scss'
 import styled from 'styled-components'
 import { Link, useStaticQuery, graphql } from "gatsby"
@@ -77,8 +75,6 @@ const MenuLinks = styled.nav`
 
 
 const Header = props => {
-  const { state, dispatch } = useContext(Context)
-  const theme = useTheme()
   const [nav, setToggleNav] = React.useState(false)
   const [button, setToggleButton] = React.useState(false)
   const linkStyles = {
@@ -111,7 +107,7 @@ const Header = props => {
           <ColorMode
             className = "color-mode" 
             button = {button}
-            onClick={() =>  dispatch({type: "TOGGLE_DARK_MODE"})}
+            // onClick={() =>  dispatch({type: "TOGGLE_DARK_MODE"})}
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.09 110.96" onClick={() =>  setToggleButton(!button)}>
             <defs></defs>
