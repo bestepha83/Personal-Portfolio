@@ -34,7 +34,7 @@ const IndexPage = () => (
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
-            src="../images/photo.jpg" alt = "Headshot"
+            src="../images/photo.png" alt = "Home Photo Banner"
           />
         </div>
         <div className = "col-6">
@@ -54,7 +54,7 @@ const IndexPage = () => (
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
-            src="../images/code.png" alt = "Headshot"
+            src="../images/code.png" alt = "Home Code Banner"
           />
         </div>
         <div className = "col-6">
@@ -74,7 +74,7 @@ const IndexPage = () => (
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
-            src="../images/guitar.jpg" alt = "Headshot"
+            src="../images/guitar.jpg" alt = "Home Music Banner"
           />
         </div>
         <div className = "col-6">
@@ -94,7 +94,7 @@ const IndexPage = () => (
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
-            src="../images/design.jpg" alt = "Headshot"
+            src="../images/design.jpg" alt = "Home Design Banner"
           />
         </div>
         <div className = "col-6">
