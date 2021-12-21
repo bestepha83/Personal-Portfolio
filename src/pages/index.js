@@ -74,7 +74,7 @@ const IndexPage = () => (
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
-            src="../images/guitar.jpg" alt = "Home Music Banner"
+            src="../images/music.png" alt = "Home Music Banner"
           />
         </div>
         <div className = "col-6">
