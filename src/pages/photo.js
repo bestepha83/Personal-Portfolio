@@ -29,7 +29,7 @@ const BlogIndex = ({ data }) => {
       <section className = "photo-banner">
         <div className = "photo-banner-img">
           <StaticImage
-            src="../images/photo.jpg"
+            src="../images/photo.png"
             alt = "Headshot"
             className = "photo-img-1"
           />        

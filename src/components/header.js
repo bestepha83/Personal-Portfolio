@@ -100,8 +100,9 @@ const Header = props => {
             className = "logo"
             to={`/`}
           >
-            <div className = "square1"></div>
-            <div className = "square2"></div>
+            <StaticImage
+              src="../images/logo.png" alt = "Logo"
+            />
             <h2>Ben Stephan</h2>
           </Link>
           <ColorMode

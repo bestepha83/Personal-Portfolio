@@ -113,7 +113,7 @@ module.exports = {
         background_color: "white",
         theme_color: "white",
         display: "standalone",
-        icon: "src/images/circletext.png",
+        icon: "src/images/logo.png",
         crossOrigin: `use-credentials`,
       },
     }
