@@ -60,11 +60,11 @@ h1, h2, h3, h4, h5, h6 {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                &:hover {
-                    img {
-                        animation: logo 2s linear;
-                    }
-                }
+                // &:hover {
+                //     img {
+                //         animation: logo 2s linear;
+                //     }
+                // }
                 img {
                     width: 45px;
                 }

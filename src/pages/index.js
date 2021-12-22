@@ -53,11 +53,6 @@ const IndexPage = () => (
       <h3>Programming</h3>
       <div className = "home-content">
         <div className = "col-6">
-          <StaticImage
-            src="../images/code.png" alt = "Home Code Banner"
-          />
-        </div>
-        <div className = "col-6">
           <p>I like to do programming for fun. Check out my stuff!</p>
           <Link
             to={`/code`}
@@ -66,6 +61,11 @@ const IndexPage = () => (
               Explore
             </button>
           </Link>          
+        </div>
+        <div className = "col-6">
+          <StaticImage
+            src="../images/code.png" alt = "Home Code Banner"
+          />
         </div>
       </div>
     </section>
@@ -93,11 +93,6 @@ const IndexPage = () => (
       <h3>Design</h3>
       <div className = "home-content">
         <div className = "col-6">
-          <StaticImage
-            src="../images/design.jpg" alt = "Home Design Banner"
-          />
-        </div>
-        <div className = "col-6">
           <p>I like to do design for fun. Check out my stuff!</p>
           <Link
             to={`/design`}
@@ -106,6 +101,11 @@ const IndexPage = () => (
               Explore
             </button>
           </Link>          
+        </div>
+        <div className = "col-6">
+          <StaticImage
+            src="../images/design.jpg" alt = "Home Design Banner"
+          />
         </div>
       </div>
     </section>
