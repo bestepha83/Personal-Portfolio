@@ -32,7 +32,7 @@ const BlogIndex = ({ data }) => {
         </div>
         <div className = "banner2">
           <StaticImage
-            src="../images/guitar.jpg"
+            src="../images/music.png"
             alt = "Headshot"
             className = ""
           />
