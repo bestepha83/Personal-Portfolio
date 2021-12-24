@@ -93,7 +93,7 @@ const IndexPage = () => (
       <h3>Design</h3>
       <div className = "home-content">
         <div className = "col-6">
-          <p>I like to do design for fun. Check out my stuff!</p>
+          <p>I like to do design for fun.</p>
           <Link
             to={`/design`}
           >

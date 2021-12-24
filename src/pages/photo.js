@@ -27,18 +27,14 @@ const BlogIndex = ({ data }) => {
       <div className = "circle2"></div>
       <div className = "circle4"></div>
       <section className = "photo-banner">
-        <div className = "photo-banner-img">
-          <StaticImage
-            src="../images/photoban2.jpg"
-            alt = "Headshot"
-            className = "photo-img-1"
-          />        
-        </div>
+        <div className = "photo-banner-sqaure3"></div>
+        <div className = "photo-banner-sqaure2"></div>
+        <div className = "photo-banner-sqaure1"></div>
         <div className = "photo-banner-img">
           <StaticImage
             src="../images/photoban1.jpg"
             alt = "Headshot"
-            className = "photo-img-2"
+            className = "photo-img-1"
           />        
         </div>
         <h1>Photography</h1>

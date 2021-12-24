@@ -356,15 +356,29 @@ h1, h2, h3, h4, h5, h6, p, li {
         transform:translateY(-10rem);
 
     }
+    .photo-banner-sqaure1,  .photo-banner-sqaure2, .photo-banner-sqaure3{
+        width: 20rem;
+        height: 20rem;
+        border-radius: 10px;
+        position: absolute;
+        top: 20%;
+    }
+    .photo-banner-sqaure1 {
+        transform: rotate(21deg);
+        background-color: $blue;
+    }
+    .photo-banner-sqaure2 {
+        transform: rotate(14deg);
+        background-color: $green;
+    }
+    .photo-banner-sqaure3 {
+        transform: rotate(7deg);
+        background-color: $background-color;
+    }
     .photo-banner-img {
         .photo-img-1 {
             height: 20rem;
             width: 15rem;
-            transform: rotate(15deg) translateY(10rem);
-        }
-        .photo-img-2 {
-            width: 20rem;
-            transform: rotate(-15deg) translateY(-10rem);
         }
     }
 }
