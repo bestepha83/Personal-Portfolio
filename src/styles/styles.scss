@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6, p, li {
                         }
                         &:hover:nth-child(5):after {
                             content: "";
-                            background-image: url("../images/design.jpg");
+                            background-image: url("../images/design.png");
                         }
                         a {
                             font-size: 3rem;
@@ -420,6 +420,14 @@ h1, h2, h3, h4, h5, h6, p, li {
             width: 90%;
             height: 80vh;
             margin: 2rem 0;
+            background-color: rgba(245, 245, 245, 0.4);
+            box-shadow: 5px 5px 10px $hover-card-color;
+            border-radius: 25px;
+            transition: 0.3s ease;
+            &:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+            }
             a {
                 padding: 1rem;
                 @include flexCenter();
@@ -427,11 +435,6 @@ h1, h2, h3, h4, h5, h6, p, li {
                 width: 100%;
                 color: black;
                 text-decoration: none;
-                transition: 0.3s ease;
-                &:hover {
-                    cursor: pointer;
-                    transform: scale(1.1);
-                }
                 .photo-card-image {
                     @include flexCenter();
                     width: 40%;

@@ -104,7 +104,7 @@ const IndexPage = () => (
         </div>
         <div className = "col-6">
           <StaticImage
-            src="../images/design.jpg" alt = "Home Design Banner"
+            src="../images/design.png" alt = "Home Design Banner"
           />
         </div>
       </div>

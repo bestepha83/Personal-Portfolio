@@ -29,14 +29,14 @@ const BlogIndex = ({ data }) => {
       <section className = "photo-banner">
         <div className = "photo-banner-img">
           <StaticImage
-            src="../images/photoban1.jpg"
+            src="../images/photoban2.jpg"
             alt = "Headshot"
             className = "photo-img-1"
           />        
         </div>
         <div className = "photo-banner-img">
           <StaticImage
-            src="../images/photoban2.jpg"
+            src="../images/photoban1.jpg"
             alt = "Headshot"
             className = "photo-img-2"
           />        
