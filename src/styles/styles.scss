@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&display=swap");
 
 $background-color: rgb(245, 245, 245);
 $hover-card-color: rgb(230, 230, 230);
@@ -60,15 +60,20 @@ h1, h2, h3, h4, h5, h6, p, li {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                // &:hover {
-                //     img {
-                //         animation: logo 2s linear;
-                //     }
-                // }
+                &:hover {
+                    img {
+                        animation: logo 2s ease-out;
+                    }
+                }
                 img {
                     width: 45px;
                 }
                 h2 {
+                    font-family: 'Arvo', serif;
+                    background: -webkit-linear-gradient(-45deg, #99bfa9 5%,#95acbe 53%, #899eaf 91%);
+                    -webkit-background-clip: text;
+                    -webkit-text-stroke: 4px transparent;
+                    -webkit-text-fill-color: $background-color;
                     margin-left: 10px;
                 }
             }
@@ -131,7 +136,7 @@ h1, h2, h3, h4, h5, h6, p, li {
             width: 100%;
             height: 100%;
             transition: 0.8s ease-in-out;
-            background-color: $background-color;
+            background-color: rgba(245, 245, 245, 0.95);
             .navigation {
                 display: flex;
                 justify-content: flex-start;
@@ -209,13 +214,28 @@ h1, h2, h3, h4, h5, h6, p, li {
 }
 @keyframes logo {
     0% {
-        transform: scaleY(1);
+        transform: rotate(0);
     }
-    50% {
-        transform: scaleY(-1);
+    15% {
+        transform: rotate(30deg);
+    }
+    30% {
+        transform: rotate(25deg)
+    }
+    45% {
+        transform: rotate(-20deg)
+    }
+    60% {
+        transform: rotate(15deg)
+    }
+    75% {
+        transform: rotate(-10deg)
+    }
+    90% {
+        transform: rotate(5deg)
     }
     100% {
-        transform: scaleY(1);
+        transform: rotate(0);
     }
 }
 
