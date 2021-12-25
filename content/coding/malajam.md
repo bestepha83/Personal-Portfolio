@@ -1,7 +1,7 @@
 ---
 title: Mala Jam Records
 category: code
-date: "2020-10-15"
+date: "2019-08-15"
 thumbnail: ../assets/code/malajam.png
 description: Record Label Startup Website using Gatsby.js
 ---

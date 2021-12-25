@@ -1,7 +1,7 @@
 ---
 title: Smoothie Shack
 category: code
-date: "2018-10-15"
+date: "2017-08-15"
 thumbnail: ../assets/code/smoothie.png
 description: Ecommerce Site using vanilla Javascript
 ---

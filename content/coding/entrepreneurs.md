@@ -1,7 +1,7 @@
 ---
 title: Cal Poly Entrepreneurs
 category: code
-date: "2020-10-15"
+date: "2021-06-15"
 thumbnail: ../assets/code/entrepreneur/entrepreneur-banner.png
 description: Website Migration and Redesign for Cal Poly Entrepreneurs
 ---

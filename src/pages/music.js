@@ -55,6 +55,9 @@ const BlogIndex = ({ data }) => {
           })}
         </div>
       </section>
+      <section className = "music-main">
+        <h2>Features</h2>
+      </section>
     </Layout>
   )
 }
