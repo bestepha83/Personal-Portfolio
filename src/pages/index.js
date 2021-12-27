@@ -54,7 +54,7 @@ const IndexPage = () => (
     <section className = "home-section home-photo">
       <h3>Colorful Photography</h3>
       <div className = "home-content">
-        <div className = "col-6 right">
+        <div className = "col-6 right-content">
           <div className = "col-6-container">
             <p>Global photography with an emphasis on color</p>
             <Link
@@ -98,7 +98,7 @@ const IndexPage = () => (
     <section className = "home-section">
       <h3>Fun Designs</h3>
       <div className = "home-content">
-        <div className = "col-6 right">
+        <div className = "col-6 right-content">
           <div className = "col-6-container">
             <p>Colorful and light designs.</p>
             <Link

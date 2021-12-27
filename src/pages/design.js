@@ -25,7 +25,7 @@ const DesignIndex = ({ data }) => {
 
       <section className = "design-banner">
         <h1>Graphic Design</h1>
-        <h4>I have created created multiple design, and you can view some of them here.</h4>
+        <h4>Colorful and light designs</h4>
       </section>
       <section className = "design-main">
         <h2>Spotify Covers</h2>

@@ -67,9 +67,10 @@ const MenuIcon = styled.button`
 `
 
 const MenuLinks = styled.nav`
-  z-index: 98;
+  z-index: ${({nav}) => (nav ? "98": '-1000')};
   display: ${({nav}) => (nav ? "block": 'none')};
   transform: ${({nav}) => (nav ? "translateX(100vw)": 'translateX(0)')};
+
 `
 
 

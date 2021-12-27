@@ -26,10 +26,10 @@ const BlogIndex = ({ data }) => {
       <section className = "code-banner">
         <div className = "code-banner-content">
           <h1>I design and develop websites for startups, clubs, and for personal projects.</h1>
+          <a href = "https://github.com/bestepha83" target="_blank">My GitHub</a>
         </div>
       </section>
       <section className = "code-main">
-        <a href = "https://github.com/bestepha83" target="_blank">My GitHub</a>
         <h2>Recent Projects</h2>
         <div className="project-feed">
           {projects.map(({ node }) => {
