@@ -6,4 +6,4 @@ thumbnail: ../assets/code/smoothie.png
 description: Ecommerce Site using vanilla Javascript
 ---
 
-<a href = "https://bestepha83.github.io/Smoothie-Shack/" target="_blank">Check it out</a>
+<a href = "https://bestepha83.github.io/Smoothie-Shack/" target="_blank" class = "err">Check it out</a>

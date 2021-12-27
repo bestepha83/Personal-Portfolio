@@ -29,48 +29,52 @@ const IndexPage = () => (
         <h4>Fueled by a passion to learn, I am always looking for new opportunities and hobbies to master. I'm curious and I like a lot of cool stuff.</h4>
       </div>
     </section>
-    <section className = "home-section home-photo">
-      <h3>Photography</h3>
-      <div className = "home-content">
-        <div className = "col-6">
-          <StaticImage
-            src="../images/photo.png" alt = "Home Photo Banner"
-          />
-        </div>
-        <div className = "col-6">
-          <p>I like to do photography for fun. Check out my stuff!</p>
-          <Link
-            to={`/photo`}
-          >
-            <button>
-              Explore
-            </button>
-          </Link>
-        </div>
-      </div>
-    </section>
     <section className = "home-section">
-      <h3>Programming</h3>
+      <h3>Programming Design and Development</h3>
       <div className = "home-content">
-        <div className = "col-6">
-          <p>I like to do programming for fun. Check out my stuff!</p>
-          <Link
-            to={`/code`}
-          >
-            <button>
-              Explore
-            </button>
-          </Link>          
-        </div>
         <div className = "col-6">
           <StaticImage
             src="../images/code.png" alt = "Home Code Banner"
           />
         </div>
+        <div className = "col-6">
+          <div className = "col-6-container">
+            <p>Minimalist, modern, illustration-based designs and efficient development</p>
+            <Link
+              to={`/code`}
+            >
+              <button>
+                See What's Up
+              </button>
+            </Link> 
+          </div>         
+        </div>
+      </div>
+    </section>
+    <section className = "home-section home-photo">
+      <h3>Colorful Photography</h3>
+      <div className = "home-content">
+        <div className = "col-6 right">
+          <div className = "col-6-container">
+            <p>Global photography with an emphasis on color</p>
+            <Link
+              to={`/photo`}
+            >
+              <button>
+                Explore the world
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className = "col-6">
+          <StaticImage
+            src="../images/photo.png" alt = "Home Photo Banner"
+          />
+        </div>
       </div>
     </section>
     <section className = "home-section home-music">
-      <h3>Music</h3>
+      <h3>Unique Music Taste</h3>
       <div className = "home-content">
         <div className = "col-6">
           <StaticImage
@@ -78,29 +82,33 @@ const IndexPage = () => (
           />
         </div>
         <div className = "col-6">
-          <p>I like to do music for fun. Check out my stuff!</p>
-          <Link
-            to={`/music`}
-          >
-            <button>
-              Explore
-            </button>
-          </Link>
+          <div className = "col-6-container">
+            <p>A mix of chill and surfy tones with a hint of jazz and blues</p>
+            <Link
+              to={`/music`}
+            >
+              <button>
+                Discover My Stuff
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
     <section className = "home-section">
-      <h3>Design</h3>
+      <h3>Fun Designs</h3>
       <div className = "home-content">
-        <div className = "col-6">
-          <p>I like to do design for fun.</p>
-          <Link
-            to={`/design`}
-          >
-            <button>
-              Explore
-            </button>
-          </Link>          
+        <div className = "col-6 right">
+          <div className = "col-6-container">
+            <p>Colorful and light designs.</p>
+            <Link
+              to={`/design`}
+            >
+              <button>
+                Check it out
+              </button>
+            </Link>             
+          </div>
         </div>
         <div className = "col-6">
           <StaticImage

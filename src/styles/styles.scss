@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6, p, li {
     0% {
         transform: rotate(0);
     }
-    15% {
+    10% {
         transform: rotate(30deg);
     }
     30% {
@@ -323,8 +323,8 @@ h1, h2, h3, h4, h5, h6, p, li {
     flex-direction: column;
     height: 100vh;
     h3 {
-        font-size: 5rem;
-        margin-bottom: 2rem;
+        font-size: 4rem;
+        margin-bottom: 4rem;
     }
     h4 {
         font-size: 3rem;
@@ -338,30 +338,38 @@ h1, h2, h3, h4, h5, h6, p, li {
         justify-content: space-around;
         align-items: center;
         width: 100%;
+        .right {
+            display: flex;
+            justify-content: flex-end;
+        }
         .col-6 {
             width: 45%;
+            .col-6-container {
+                width: 80%;
+                p {
+                    font-size: 2.3rem;
+                    margin-bottom: 2rem;
+                }
+                button {
+                    font-size: 1.1rem;
+                    background-color: transparent;
+                    color: $black;
+                    border: 2px solid $black;
+                    border-radius: 7px;
+                    padding: 0.75rem 2.3rem;
+                    box-shadow: #989898 3px 3px 5px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    &:active {
+                        box-shadow: none;
+                    }
+                }                
+            }
             img {
                 width: 90%;
             }
-            p {
-                font-size: 2.3rem;
-                margin-bottom: 1rem;
-            }
-            button {
-                font-size: 1.1rem;
-                background-color: transparent;
-                color: $black;
-                border: 2px solid $black;
-                border-radius: 7px;
-                padding: 0.75rem 2.3rem;
-                box-shadow: #989898 3px 3px 5px;
-                &:hover {
-                    cursor: pointer;
-                }
-                &:active {
-                    box-shadow: none;
-                }
-            }
+
         }
     }
 }
@@ -660,6 +668,9 @@ h1, h2, h3, h4, h5, h6, p, li {
             width: 90%;
             height: 80vh;
             margin: 1rem 0;
+            background-color: rgba(245, 245, 245, 0.4);
+            box-shadow: 5px 5px 10px $hover-card-color;
+            border-radius: 25px;
             transition: 0.3s ease;
             a {
                 display: flex;
@@ -732,8 +743,17 @@ h1, h2, h3, h4, h5, h6, p, li {
         }
     }
 }
-
-
+.err {
+    text-decoration: none;
+    color: $black;
+    display: inline-block;
+    position:relative;
+    transition: all 0.3s ease;
+    &:hover {
+        color: rgb(43, 138, 97);
+        background: url(http://i.imgur.com/HlfA2is.gif) bottom repeat-x;
+    }
+}
 
 
 // DESIGN PAGE //

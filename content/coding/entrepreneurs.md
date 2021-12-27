@@ -5,7 +5,7 @@ date: "2021-06-15"
 thumbnail: ../assets/code/entrepreneur/entrepreneur-banner.png
 description: Website Migration and Redesign for Cal Poly Entrepreneurs
 ---
-You can view the website <a href = "https://www.cpentrepreneurs.com/" target="_blank">Here</a>
+You can view the website <a href = "https://www.cpentrepreneurs.com/" target="_blank" class = "err">Here</a>
 
 ![Cal Poly Entrepreneurs](../assets/code/entrepreneur/entrepreneur-1.png)
 
