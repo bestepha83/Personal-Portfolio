@@ -62,11 +62,11 @@ h1, h2, h3, h4, h5, h6, p, li {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                &:hover {
-                    img {
-                        animation: logo 2s ease-out;
-                    }
-                }
+                // &:hover {
+                //     img {
+                //         animation: logo 2s ease-out;
+                //     }
+                // }
                 img {
                     width: 45px;
                 }
@@ -79,13 +79,19 @@ h1, h2, h3, h4, h5, h6, p, li {
                     margin-left: 10px;
                 }
             }
-            .color-mode {
-                background: transparent;
-                border: none;
-                display: block;
-                outline: none;
-                width: 30px;
+            .burger {
+                @include flexCenter();
+                margin: 0 4rem;
+                height: 100%;
+                background-color: transparent;
             }
+            // .color-mode {
+            //     background: transparent;
+            //     border: none;
+            //     display: block;
+            //     outline: none;
+            //     width: 30px;
+            // }
 
         }
     }
@@ -109,10 +115,13 @@ h1, h2, h3, h4, h5, h6, p, li {
             transform-origin: 0 0;
             z-index: 100;
             .current-page {
+                overflow: hidden;
+                width: 30%;
                 .current-page-items {
-                    h2 {
-                        font-size: 0.8rem;
-                    }                    
+                    white-space: nowrap;
+                    display: inline-block;
+                    position: relative;
+                    animation: message 10s infinite linear;                  
                 }
             }
             .header-date {
@@ -189,15 +198,6 @@ h1, h2, h3, h4, h5, h6, p, li {
                 }         
             }
         }
-        .burger {
-            @include flexCenter();
-            position: absolute;
-            left: 0;
-            margin: 0 4rem;
-            height: 100%;
-            background-color: transparent;
-        }
-
 
     }
 }
@@ -239,6 +239,15 @@ h1, h2, h3, h4, h5, h6, p, li {
         transform: rotate(0);
     }
 }
+@keyframes message {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
 
 
 .circle-text {
@@ -728,8 +737,15 @@ h1, h2, h3, h4, h5, h6, p, li {
         @include flexCenter();
         flex-direction: column;
         height: 100vh;
+        text-align: center;
+        max-width: 80%;
+        margin-left: 10%;
         h1 {
-            font-size: 8rem;
+            font-size: 6rem;
+            margin: 1rem 0;
+        }
+        p {
+            font-size: 2rem;
         }
         .project-image-container {
             img {
@@ -747,8 +763,10 @@ h1, h2, h3, h4, h5, h6, p, li {
             img {
                 width: 200px;
                 background-color: transparent;
+                margin: 2rem 0;
             }
             p {
+                margin: 2rem 0;
                 font-size: 2rem;
             }
         }
@@ -818,13 +836,25 @@ h1, h2, h3, h4, h5, h6, p, li {
         @include flexCenter();
         flex-direction: column;
         height: 100vh;
-        h1 {
-            font-size: 8rem;
-        }
         .design-image-container {
             img {
-                width: 30vw;
+                width: 40vw;
             }
+        }
+        .design-image-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            height: 100vh;
+            width: 100%;
+            filter: blur(25px);
+            -webkit-filter: blur(25px);
+            overflow: hidden;
+        }
+        p {
+            font-size: 2rem;
+            margin: 1rem 0;
         }
     }
     .design-about {
@@ -832,12 +862,12 @@ h1, h2, h3, h4, h5, h6, p, li {
         flex-direction: column;
         width: 80%;
         h4 {
-            font-size: 3rem;
+            font-size: 4rem;
         }
         .design-content-body {
             @include flexCenter();
             flex-direction: column;
-            width: 80%;
+            width: 100%;
             h6 {
                 font-size: 2rem;
             }            
@@ -1200,6 +1230,9 @@ h1, h2, h3, h4, h5, h6, p, li {
 .site-head-container {
     // LEFT NAV //
     .site-head-left {
+        .page-info {
+            margin: 0 1rem;
+        }
         nav {
             .navigation {
                 .nav-list {
@@ -1250,6 +1283,15 @@ h1, h2, h3, h4, h5, h6, p, li {
         }
     }
 }
+
+.project-content {
+    .project-banner {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+}
+
 
 .photo-banner {
     h1 {
@@ -1385,6 +1427,22 @@ h1, h2, h3, h4, h5, h6, p, li {
                     width: 50%;
                 }
             }
+        }
+    }
+}
+
+.project-content {
+    .project-banner {
+        .project-content-image {
+            img {
+                width: 40vw;
+            }
+        }
+        h1 {
+            font-size: 3.5rem;
+        }
+        p {
+            font-size: 1.5rem;
         }
     }
 }

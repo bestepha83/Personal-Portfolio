@@ -106,7 +106,14 @@ const Header = props => {
             />
             <h2>Ben Stephan</h2>
           </Link>
-          <ColorMode
+          <div className = "burger">
+            <MenuIcon nav = {nav} onClick = {() => setToggleNav(!nav)}>
+              <div />
+              <div />
+              <div />
+            </MenuIcon>              
+          </div>
+          {/* <ColorMode
             className = "color-mode" 
             button = {button}
             // onClick={() =>  dispatch({type: "TOGGLE_DARK_MODE"})}
@@ -119,7 +126,7 @@ const Header = props => {
               </g>
               </g>
             </svg>
-          </ColorMode>
+          </ColorMode> */}
         </div>
       </div>
       <div className="site-head-left">
@@ -133,7 +140,7 @@ const Header = props => {
           </div>
           <div className = "current-page">
             <div className = 'current-page-items'>
-              <h2>Welcome</h2>              
+              <p>Good Afternoon Good Afternoon Good Afternoon</p>              
             </div>
           </div>
         </div>
@@ -209,13 +216,6 @@ const Header = props => {
             </ul>
           </div>
         </MenuLinks>
-      <div className = "burger">
-        <MenuIcon nav = {nav} onClick = {() => setToggleNav(!nav)}>
-          <div />
-          <div />
-          <div />
-        </MenuIcon>              
-      </div>
       </div>
       <div className = "circle-text">
         <Link

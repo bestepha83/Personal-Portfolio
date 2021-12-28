@@ -19,6 +19,16 @@ class BlogPostTemplate extends React.Component {
         />
         <article className = "design-content">
           <div className="design-banner">
+            <div className="design-image-background">
+              {design.frontmatter.thumbnail && (
+                <div className="design-content-image">
+                  <GatsbyImage
+                    image={getImage(design.frontmatter.thumbnail)}
+                    alt={design.frontmatter.title}
+                  />
+                </div>
+              )}
+            </div>
             <div className="design-image-container">
               {design.frontmatter.thumbnail && (
                 <div className="design-content-image">
