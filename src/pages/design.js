@@ -31,8 +31,18 @@ const DesignIndex = ({ data }) => {
             alt = "Graphic Design"
           />        
         </div>
-        <h1>Graphic Design</h1>
-        <h4>Colorful and light designs</h4>
+        <h1
+          data-sal="fade"
+          data-sal-duration="2000"
+          data-sal-delay="100"
+          data-sal-easing="ease"
+        >Graphic Design</h1>
+        <h4
+          data-sal="fade"
+          data-sal-duration="2000"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+        >Colorful and light designs</h4>
       </section>
       <section className = "design-main">
         <h2>Spotify Covers</h2>

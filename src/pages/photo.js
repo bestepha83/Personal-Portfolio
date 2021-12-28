@@ -36,7 +36,12 @@ const BlogIndex = ({ data }) => {
             alt = "Headshot"
           />        
         </div>
-        <h1>Photography</h1>
+        <h1
+          data-sal="fade"
+          data-sal-duration="2000"
+          data-sal-delay="200"
+          data-sal-easing="ease"
+        >Photography</h1>
       </section>
       <section className = "photo-main">
         <h2>Destinations</h2>

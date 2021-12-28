@@ -26,8 +26,18 @@ const BlogIndex = ({ data }) => {
       <section className = "music-banner">
         <div className = "banner1">
           <div className = "banner1-content">
-            <h1>The Tastiest Music There Is</h1>
-            <h4>Indie, Blues, Jazz, Soul</h4>
+            <h1
+              data-sal="fade"
+              data-sal-duration="2000"
+              data-sal-delay="100"
+              data-sal-easing="ease"
+            >The Tastiest Music There Is</h1>
+            <h4
+              data-sal="fade"
+              data-sal-duration="2000"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >Indie, Blues, Jazz, Soul</h4>
           </div>
         </div>
         <div className = "banner2">

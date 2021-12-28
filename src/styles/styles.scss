@@ -660,6 +660,7 @@ h1, h2, h3, h4, h5, h6, p, li {
         a {
             text-decoration: none;
             color: $black;
+            font-size: 2rem;
             transition: all 0.3s ease;
             &:hover {
                 color: $darkgreen;
@@ -1263,6 +1264,11 @@ h1, h2, h3, h4, h5, h6, p, li {
             .navigation {
                 .nav-list {
                     margin-left: 150px;
+                    .nav-elements {
+                        &::after {
+                            display: none;
+                        }
+                    }
                 }         
             }
         }

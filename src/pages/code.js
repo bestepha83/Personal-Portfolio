@@ -25,8 +25,18 @@ const BlogIndex = ({ data }) => {
       <div className = "circle3"></div>
       <section className = "code-banner">
         <div className = "code-banner-content">
-          <h1>I design and develop websites for startups, clubs, and for personal projects.</h1>
-          <a href = "https://github.com/bestepha83" target="_blank">My GitHub</a>
+          <h1
+            data-sal="fade"
+            data-sal-duration="2000"
+            data-sal-delay="100"
+            data-sal-easing="ease"
+          >I design and develop websites for startups, clubs, and for personal projects.</h1>
+          <a href = "https://github.com/bestepha83" target="_blank"
+            data-sal="fade"
+            data-sal-duration="2000"
+            data-sal-delay="300"
+            data-sal-easing="ease"
+          >My GitHub</a>
         </div>
       </section>
       <section className = "code-main">
