@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import PostCard from "../components/designCard"
 
 import '../styles/styles.scss'
+import { StaticImage } from "gatsby-plugin-image"
 
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const DesignIndex = ({ data }) => {
@@ -24,6 +25,12 @@ const DesignIndex = ({ data }) => {
       />
 
       <section className = "design-banner">
+        <div className = "design-banner-img">
+          <StaticImage
+            src="../images/design.png"
+            alt = "Graphic Design"
+          />        
+        </div>
         <h1>Graphic Design</h1>
         <h4>Colorful and light designs</h4>
       </section>

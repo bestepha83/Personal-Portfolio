@@ -19,7 +19,6 @@ class BlogPostTemplate extends React.Component {
         />
         <article className = "music-content">
           <div className="music-banner">
-            <h1 className="music-content-title">{music.frontmatter.title}</h1>
             <div className="music-image-container">
               {music.frontmatter.thumbnail && (
                 <div className="music-content-image">
@@ -29,12 +28,13 @@ class BlogPostTemplate extends React.Component {
                   />
                 </div>
               )}
+              {music.frontmatter.description && (
+                <p class="music-content-excerpt">
+                  {music.frontmatter.description}
+                </p>
+              )}                
             </div>
-            {music.frontmatter.description && (
-              <p class="music-content-excerpt">
-                {music.frontmatter.description}
-              </p>
-            )}            
+            <h1 className="music-content-title">{music.frontmatter.title}</h1>         
           </div>
 
           <div className="music-about">

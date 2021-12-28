@@ -34,7 +34,6 @@ const BlogIndex = ({ data }) => {
           <StaticImage
             src="../images/photoban1.jpg"
             alt = "Headshot"
-            className = "photo-img-1"
           />        
         </div>
         <h1>Photography</h1>
