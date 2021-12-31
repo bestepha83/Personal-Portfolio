@@ -15,14 +15,15 @@ const IndexPage = () => (
     <div className = "circle3"></div>
     <div className = "circle4"></div>
     <section className = "banner">
-      <h1 className = "banner-title-1">Hey there!</h1>
+      <div className = "banner-title">
+        <h1>Hey there! I'm Ben</h1>
+        <h3>Programmer, Designer, Musician, and Photographer</h3>        
+      </div>
       <div className = "banner-headshot">
         <StaticImage
           src="../images/banner.png" alt = "Headshot"
         />
       </div>
-      <h1 className = "banner-title-2">I'm Ben</h1>
-      <h3>Programmer, Designer, Musician, and Photographer</h3>
     </section>
     <section className = "home-section">
       <div className = "home-mission">

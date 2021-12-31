@@ -12,6 +12,12 @@ export default props => (
           image={getImage(props.node.frontmatter.thumbnail)}
           alt="design feed"
         />
+        <div className = "design-card-info">
+          <h4>
+            {props.node.frontmatter.title || props.node.fields.slug}
+          </h4>
+          <p>{props.node.frontmatter.description}</p>
+        </div>
       </Link>
     </div>
   </article>

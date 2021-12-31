@@ -281,47 +281,30 @@ h1, h2, h3, h4, h5, h6, p, li {
 .banner {
     height: 100vh;
     @include flexCenter();
-    h1 {
-        width: 80%;
-        font-size: 7rem;
-        font-family: 'lato';
-        z-index: 3;
-    }
-    .banner-title-1 {
-        position: absolute;
-        top: 15%;
-    }
-    .banner-title-2 {
-        position: absolute;
-        top: 40%;
-        left: 45%;
-    }
-    h3 {
-        font-size: 2rem;
-        position: absolute;
-        top: 65%;
-        left: 45%;
+    .banner-title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        h1 {
+            width: 80%;
+            font-size: 7rem;
+            font-family: 'lato';
+            z-index: 3;
+            margin-bottom: 1rem;
+        }
+        h3 {
+            width: 80%;
+            font-size: 2rem;
+        }
     }
     .banner-headshot {
-        position: absolute;
-        bottom: 80px;
-        left: 250px;
-        width: 23%;
-        transform: rotateX(180deg) rotate(-180deg);
+        width: 50%;
         z-index: 2;
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: -50px;
-            left: 0px;
-            height: 25rem;
-            width: 25rem;
-            border-radius: 50%;
-            background-color: $lightblue;
-            z-index: -1;
-        }
+        @include flexCenter();
         img {
-            width: 100%;
+            width: 75%;
         }
     }
 }
@@ -820,15 +803,49 @@ h1, h2, h3, h4, h5, h6, p, li {
     .design-feed {
         @include flexCenter();
         flex-wrap: wrap;
-        width: 100vw;
+        width: 100%;
         .design-card {
             @include flexCenter();
-            width: 50%;
-            margin-bottom: 2rem;
+            width: 45%;
             .design-card-image {
-                img {
-                    width: 30vw;
+                @include flexCenter();
+                width: 40vw;
+                margin-bottom: 2rem;
+                transition: 0.3s ease;
+                a {
+                    text-decoration: none;
                 }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: 1;
+                }
+                .design-card-info {
+                    @include flexCenter();
+                    flex-direction: column;
+                    color: white;
+                    text-decoration: none;
+                    position: relative;
+                    z-index: 20;
+                    opacity: 0;
+                    transition: 0.3s all;
+                    text-align: center;
+                    position: relative;
+                    height: 150px;
+                    bottom: 150px;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    h4 {
+                        font-size: 3rem;
+                    }
+                    p {
+                        font-size: 1.75rem;
+                    }
+                }
+                &:hover .design-card-info {
+                    opacity: 1;
+                }
+
             }
         }
     }
@@ -842,11 +859,14 @@ h1, h2, h3, h4, h5, h6, p, li {
         flex-direction: column;
         height: 100vh;
         .design-image-container {
+            width: 40vw; // 100vw also looks cool
             img {
-                width: 40vw;
+                width: 100%;
+                box-shadow: 10px 10px 10px $black;
             }
         }
         .design-image-background {
+            @include flexCenter();
             position: absolute;
             top: 0;
             left: 0;
@@ -857,17 +877,20 @@ h1, h2, h3, h4, h5, h6, p, li {
             -webkit-filter: blur(25px);
             overflow: hidden;
         }
-        p {
-            font-size: 2rem;
-            margin: 1rem 0;
-        }
     }
     .design-about {
         @include flexCenter();
         flex-direction: column;
         width: 80%;
-        h4 {
-            font-size: 4rem;
+        h1 {
+            font-size: 5rem;
+            z-index: 10;
+            color: white;
+        }
+        p {
+            font-size: 2rem;
+            z-index: 10;
+            color: white;
         }
         .design-content-body {
             @include flexCenter();
@@ -878,7 +901,7 @@ h1, h2, h3, h4, h5, h6, p, li {
             }            
             img {
                 width: 20vw;
-            }                
+            }        
             
             p {
                 font-size: 2rem;
