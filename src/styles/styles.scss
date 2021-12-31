@@ -539,10 +539,15 @@ h1, h2, h3, h4, h5, h6, p, li {
     .photo-about {
         @include flexCenter();
         width: 100%;
+        height: auto;
         .photo-content-body {
-            width: 80%;
-            background-color: white;
-
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            img {
+                width: 20vw;
+            }
         }
     }
 }
@@ -762,8 +767,7 @@ h1, h2, h3, h4, h5, h6, p, li {
     position:relative;
     transition: all 0.3s ease;
     &:hover {
-        color: rgb(43, 138, 97);
-        background: url(http://i.imgur.com/HlfA2is.gif) bottom repeat-x;
+        color: -webkit-linear-gradient(-45deg, #99bfa9 5%,#95acbe 53%, #899eaf 91%);
     }
 }
 
@@ -854,6 +858,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 // DESIGN TEMPLATE
 
 .design-content {
+    @include flexCenter();
     .design-banner {
         @include flexCenter();
         flex-direction: column;
@@ -886,10 +891,12 @@ h1, h2, h3, h4, h5, h6, p, li {
         h1 {
             font-size: 5rem;
             z-index: 10;
+            margin-bottom: 1rem;
         }
         p {
             font-size: 2rem;
             z-index: 10;
+            margin-bottom: 1rem;
         }
         .design-content-body {
             @include flexCenter();
