@@ -3,7 +3,7 @@ title: Morro Bay
 category: design
 date: "2021-10-15"
 thumbnail: ../assets/design/morro.png
-description: Morro Bay
+description: Chillin at the Beach
 ---
 
-Spotify <a href = "https://open.spotify.com/playlist/13t9d2WJ5qXinedyj0Wg56?si=0bcd10c22b564460" target="_blank">Link</a>
+Spotify <a href = "https://open.spotify.com/playlist/6SchWb6HFkbLPUN7Pb4JmJ?si=663c71ae5035455d" target="_blank" class = "err">Link</a>
