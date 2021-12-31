@@ -45,7 +45,6 @@ const DesignIndex = ({ data }) => {
         >Colorful and light designs</h4>
       </section>
       <section className = "design-main">
-        <h2>Spotify Covers</h2>
         <div className="design-feed">
           {design.map(({ node }) => {
             designCounter++

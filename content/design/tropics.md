@@ -1,7 +1,7 @@
 ---
 title: The Tropics
 category: design
-date: "2020-10-15"
+date: "2020-10-16"
 thumbnail: ../assets/design/tropics-v1.png
 description: You're baking under the sun on a lawn chair at the beach
 ---

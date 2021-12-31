@@ -1,7 +1,7 @@
 ---
 title: Dazed and Dizzy
 category: design
-date: "2020-10-15"
+date: "2021-10-15"
 thumbnail: ../assets/design/dazed.png
 description: Dazed
 ---
