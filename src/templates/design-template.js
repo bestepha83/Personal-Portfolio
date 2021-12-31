@@ -39,19 +39,20 @@ class BlogPostTemplate extends React.Component {
                 </div>
               )}
             </div>
+            <div className="design-about">
+              <h1 className="design-content-title">{design.frontmatter.title}</h1>
+              {design.frontmatter.description && (
+                <p class="design-content-excerpt">
+                  {design.frontmatter.description}
+                </p>
+              )}
+              <div
+                className="design-content-body"
+                dangerouslySetInnerHTML={{ __html: design.html }}
+              />
+            </div>            
           </div>
-          <div className="design-about">
-            <h1 className="design-content-title">{design.frontmatter.title}</h1>
-            {design.frontmatter.description && (
-              <p class="design-content-excerpt">
-                {design.frontmatter.description}
-              </p>
-            )}
-            <div
-              className="design-content-body"
-              dangerouslySetInnerHTML={{ __html: design.html }}
-            />
-          </div>
+
         </article>
       </Layout>
     )

@@ -768,9 +768,9 @@ h1, h2, h3, h4, h5, h6, p, li {
     color: $black;
     display: inline-block;
     position:relative;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     &:hover {
-        color: -webkit-linear-gradient(-45deg, #99bfa9 5%,#95acbe 53%, #899eaf 91%);
+        color: $darkblue;
     }
 }
 
@@ -862,15 +862,42 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 .design-content {
     @include flexCenter();
+    width: 100%;
     .design-banner {
         @include flexCenter();
-        flex-direction: column;
         height: 100vh;
+        width: 100%;
         .design-image-container {
-            width: 40vw; // 100vw also looks cool
+            @include flexCenter();
+            width: 50%; // 100vw also looks cool
             img {
-                width: 100%;
+                width: 30vw;
                 box-shadow: 10px 10px 10px $black;
+            }
+        }
+        .design-about {
+            @include flexCenter();
+            flex-direction: column;
+            width: 50%;
+            text-align: center;
+            h1 {
+                font-size: 5rem;
+                z-index: 2;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 2rem;
+                z-index: 2;
+                margin-bottom: 1rem;
+            }
+            .design-content-body {
+                @include flexCenter();
+                flex-direction: column;
+                width: 100%;       
+                p {
+                    font-size: 2rem;
+                }
+    
             }
         }
         .design-image-background {
@@ -884,34 +911,6 @@ h1, h2, h3, h4, h5, h6, p, li {
             filter: blur(25px);
             -webkit-filter: blur(25px);
             overflow: hidden;
-        }
-    }
-    .design-about {
-        @include flexCenter();
-        flex-direction: column;
-        height: 100vh;
-        width: 80%;
-        h1 {
-            font-size: 5rem;
-            z-index: 10;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 2rem;
-            z-index: 10;
-            margin-bottom: 1rem;
-        }
-        .design-content-body {
-            @include flexCenter();
-            flex-direction: column;
-            width: 100%;
-            h6 {
-                font-size: 2rem;
-            }            
-            p {
-                font-size: 2rem;
-            }
-
         }
     }
 }
@@ -1482,6 +1481,13 @@ h1, h2, h3, h4, h5, h6, p, li {
     }
 }
 
+.design-content {
+    .design-banner {
+        .design-image-container {
+            width: 50vw;
+        }
+    }
+}
 }
 
 @media only screen and (max-width: 700px) {
@@ -1526,6 +1532,13 @@ h1, h2, h3, h4, h5, h6, p, li {
                     }
                 }
             }
+        }
+    }
+}
+.design-content {
+    .design-banner {
+        .design-image-container {
+            width: 70vw;
         }
     }
 }
