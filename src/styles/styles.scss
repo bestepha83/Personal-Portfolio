@@ -541,12 +541,15 @@ h1, h2, h3, h4, h5, h6, p, li {
         width: 100%;
         height: auto;
         .photo-content-body {
-            width: 100%;
+            width: 90%;
             height: auto;
             display: flex;
+            justify-content: space-around;
+            align-items: center;
             flex-wrap: wrap;
             img {
                 width: 20vw;
+                margin: 2rem 0;
             }
         }
     }
