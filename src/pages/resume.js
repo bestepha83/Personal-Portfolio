@@ -16,7 +16,7 @@ const BlogIndex = ({ data }) => {
         keywords={[
           `Resume`,
         ]}
-        description=""
+        description="Ben's Resume"
       />
 
       <section className = "resume-banner">

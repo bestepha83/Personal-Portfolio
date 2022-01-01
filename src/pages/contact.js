@@ -62,9 +62,9 @@ export default class Contact extends React.Component {
         <SEO
           title="Contact"
           keywords={[
-            `record labels that accept demos`,
+            `contact`,
           ]}
-          description="Mala Jam Records wants to hear from you! Submit a demo of your music and you could become the newest member of the Mala Jam community."
+          description="Contact Ben Stephan"
         />
         <main className = "contact-main">
           <h1>Let's Connect!</h1>

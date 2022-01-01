@@ -20,7 +20,7 @@ const BlogIndex = ({ data }) => {
         keywords={[
           `Music`,
         ]}
-        description="My coding music"
+        description="Ben's music"
       />
 
       <section className = "music-banner">

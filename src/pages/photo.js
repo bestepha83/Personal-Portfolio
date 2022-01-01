@@ -22,7 +22,7 @@ const BlogIndex = ({ data }) => {
         keywords={[
           `photography`,
         ]}
-        description="Photography"
+        description="Ben's Photography"
       />
       <div className = "circle2"></div>
       <div className = "circle4"></div>

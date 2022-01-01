@@ -17,11 +17,11 @@ const DesignIndex = ({ data }) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="design"
+        title="Design"
         keywords={[
           `design`,
         ]}
-        description="My coding design"
+        description="Ben's design"
       />
 
       <section className = "design-banner">
