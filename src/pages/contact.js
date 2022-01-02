@@ -71,7 +71,7 @@ export default class Contact extends React.Component {
           <div className = "contact-content">
             <div className = "contact-col-6">
               <StaticImage
-                src="../images/banner.png" alt = "Headshot"
+                src="../images/design.png" alt = "Headshot"
               />
             </div>
             <div className="contact-col-6">
@@ -115,10 +115,11 @@ export default class Contact extends React.Component {
                       onBlur={this.handleCategory}
                     >
                       <option value>- Category -</option>
-                      <option value="Bookings">Bookings</option>
-                      <option value="Demos">Demo Submissions</option>
-                      <option value="Inquiries">General Inquiries</option>
-                      <option value="Other">Just Wanna Say Hi!</option>
+                      <option value="Programming">Programming</option>
+                      <option value="Photography">Photography</option>
+                      <option value="Music">Music</option>
+                      <option value="Design">Design</option>
+                      <option value="Other">General Inquiries</option>
                     </select>
                   </label>
                 </div>
@@ -146,7 +147,7 @@ export default class Contact extends React.Component {
                 </p>
                 <div data-netlify-recaptcha="true"></div>
                 <p className="actions">
-                  <button type="submit" className="primary">
+                  <button type="submit">
                     Send
                   </button>
                   <input type="reset" defaultValue="Reset" />

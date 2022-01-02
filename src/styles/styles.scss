@@ -1180,10 +1180,10 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 .contact-main {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     h1 {
         @include flexCenter();
-        height: 40%;
+        height: 30%;
         width: 100%;
         font-size: 6rem;
     }
@@ -1192,11 +1192,18 @@ h1, h2, h3, h4, h5, h6, p, li {
         height: 60%;
         width: 100%;
         .contact-col-6 {
+            @include flexCenter();
             width: 50%;
+            img {
+                @include flexCenter();
+                width: 100%;
+            }
             form {
                 @include flexCenter();
                 flex-direction: column;
+                width: 100%;
                 .contact-input {
+                    width: 60%;
                     label {
                         color: $black;
                         display: block;
@@ -1204,15 +1211,33 @@ h1, h2, h3, h4, h5, h6, p, li {
                         margin: 0;
                         input, select, textarea {
                             color: $black;
-                            border: none;
                             border: solid 1px $black;
+                            border-radius: 5px;
                             background-color: transparent;
                             text-decoration: none;
-                            padding: 1rem 0.5rem;
-                            margin: 1rem 0;
+                            padding: 1rem 1rem;
+                            margin: 1rem;
+                            width: 100%;
                         }
                     }                
-                }            
+                }  
+                .actions {
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    button, input {
+                        padding: 1rem 2.5rem;
+                        border: solid 1px $black;
+                        border-radius: 5px;
+                        background: transparent;
+                        transition: 0.3s ease;
+                        &:hover {
+                            background: $lightblue;
+                            cursor: pointer;
+                        }
+                    }
+                }          
             }
         }
     }
