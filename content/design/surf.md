@@ -1,7 +1,7 @@
 ---
 title: Surf's Up
 category: design
-date: "2020-10-15"
+date: "2021-10-15"
 thumbnail: ../assets/design/surf.png
 description: A blend of punk rock and surfiness
 ---
