@@ -36,9 +36,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 .site-head-container {
     @include flexCenter();
-    height: 100vh;
     width: 100%;
-    position: absolute;
     
     // TOP NAV //
     .site-head-top {
@@ -50,7 +48,6 @@ h1, h2, h3, h4, h5, h6, p, li {
         align-items: center;
         height: 5rem;
         width: 100%;
-        z-index: 101;
         .site-head-top-content {
             width: 80%;
             display: flex;
@@ -85,13 +82,63 @@ h1, h2, h3, h4, h5, h6, p, li {
                 height: 100%;
                 background-color: transparent;
             }
-            // .color-mode {
-            //     background: transparent;
-            //     border: none;
-            //     display: block;
-            //     outline: none;
-            //     width: 30px;
-            // }
+            nav {
+                @include flexCenter();
+                width: 100vw;
+                height: 100vh;
+                transition: 0.8s ease-in-out;
+                background-color: rgba(245, 245, 245, 0.95);
+                .navigation {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    .nav-list {
+                        margin-left: 300px;
+                        .nav-elements {
+                            margin: 10px;
+                            list-style: none;
+                            &:after {
+                                position: absolute;
+                                top: -100px;
+                                left: 400px;
+                                display: block;
+                                width: 80vw;
+                                height: 70vh;
+                                background-repeat: no-repeat;
+                                background-size: 50vh;
+                            }
+                            &:hover {
+                                position: relative;
+                            }
+                            &:hover:nth-child(2):after {
+                                content: "";
+                                background-image: url("../images/code.png");
+                            }
+                            &:hover:nth-child(3):after {
+                                content: "";
+                                background-image: url("../images/photo.png");               
+                            }
+                            &:hover:nth-child(4):after {
+                                content: "";
+                                background-image: url("../images/music.png");                        
+                            }
+                            &:hover:nth-child(5):after {
+                                content: "";
+                                background-image: url("../images/design.png");
+                            }
+                            a {
+                                font-size: 3rem;
+                                text-decoration: none;
+                                // &:hover {
+                                //     color: rgb(71, 173, 131);
+                                // }
+                            }
+                        }
+                    }         
+                }
+            }
 
         }
     }
@@ -100,20 +147,20 @@ h1, h2, h3, h4, h5, h6, p, li {
     .site-head-left {
         font-family: 'Lato';
         @include flexCenter();
-        width: 100%;
-        height: 100%;
-        z-index: 4;
+        width: 100vh;
+        height: 8rem;
+        transform: rotate(-90deg);
+
+        position: absolute;
         .page-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            margin: 0 4rem;
-            width: 90vh;
             display: flex;
-            justify-content: space-between;
-            transform: rotate(-90deg);
-            transform-origin: 0 0;
-            z-index: 100;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+            height: 100%;
+            position: absolute;
+            bottom: 45vw;
+            right: 55vh;
             .current-page {
                 overflow: hidden;
                 width: 30%;
@@ -137,65 +184,6 @@ h1, h2, h3, h4, h5, h6, p, li {
                         margin: 0 20px;
                     }
                 }
-            }
-        }
-        nav {
-            @include flexCenter();
-            position: absolute;
-            right: 100vw;
-            width: 100%;
-            height: 100%;
-            transition: 0.8s ease-in-out;
-            background-color: rgba(245, 245, 245, 0.95);
-            .navigation {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-                .nav-list {
-                    margin-left: 300px;
-                    .nav-elements {
-                        margin: 10px;
-                        list-style: none;
-                        &:after {
-                            position: absolute;
-                            top: -100px;
-                            left: 400px;
-                            display: block;
-                            width: 80vw;
-                            height: 70vh;
-                            background-repeat: no-repeat;
-                            background-size: 50vh;
-                        }
-                        &:hover {
-                            position: relative;
-                        }
-                        &:hover:nth-child(2):after {
-                            content: "";
-                            background-image: url("../images/code.png");
-                        }
-                        &:hover:nth-child(3):after {
-                            content: "";
-                            background-image: url("../images/photo.png");               
-                        }
-                        &:hover:nth-child(4):after {
-                            content: "";
-                            background-image: url("../images/music.png");                        
-                        }
-                        &:hover:nth-child(5):after {
-                            content: "";
-                            background-image: url("../images/design.png");
-                        }
-                        a {
-                            font-size: 3rem;
-                            text-decoration: none;
-                            // &:hover {
-                            //     color: rgb(71, 173, 131);
-                            // }
-                        }
-                    }
-                }         
             }
         }
 
@@ -257,7 +245,7 @@ h1, h2, h3, h4, h5, h6, p, li {
     width: 12rem;
     cursor: pointer;
     transition: 0.3s ease;
-    z-index: 4;
+    z-index: 100;
     &:hover{
         transform: scale(1.1);
     }
@@ -291,7 +279,6 @@ h1, h2, h3, h4, h5, h6, p, li {
             width: 80%;
             font-size: 7rem;
             font-family: 'lato';
-            z-index: 3;
             margin-bottom: 1rem;
         }
         h3 {
@@ -301,7 +288,6 @@ h1, h2, h3, h4, h5, h6, p, li {
     }
     .banner-headshot {
         width: 50%;
-        z-index: 2;
         @include flexCenter();
         img {
             width: 75%;

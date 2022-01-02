@@ -4,15 +4,6 @@ import styled from 'styled-components'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-const ColorMode = styled.button`
-  cursor: pointer;
-  fill: ${({button}) => button ? 'white' : '#181818'};
-  transition: 0.5s;
-  :hover {
-    transform: scaleY(0.85);
-  }
-`
-
 const MenuIcon = styled.button`
   display: flex;
   flex-direction: column;
@@ -67,9 +58,12 @@ const MenuIcon = styled.button`
 `
 
 const MenuLinks = styled.nav`
-  z-index: ${({nav}) => (nav ? "98": '-1000')};
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: ${({nav}) => (nav ? "98": '-11')};
   display: ${({nav}) => (nav ? "block": 'none')};
-  transform: ${({nav}) => (nav ? "translateX(100vw)": 'translateX(0)')};
+  transform: ${({nav}) => (nav ? "translateX(0)": 'translateX(-100vw)')};
 
 `
 
@@ -113,20 +107,79 @@ const Header = props => {
               <div />
             </MenuIcon>              
           </div>
-          {/* <ColorMode
-            className = "color-mode" 
-            button = {button}
-            // onClick={() =>  dispatch({type: "TOGGLE_DARK_MODE"})}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.09 110.96" onClick={() =>  setToggleButton(!button)}>
-            <defs></defs>
-              <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1" className = "isolate">
-              <path className="cls-1" d="M124.5,59.35c-5,33.77-32.51,54.72-62.28,51.24C32.34,106.87,4.42,85.94.4,59.35S23.82,3.89,62.68.31,129.54,25.72,124.5,59.35Z"/>
-              </g>
-              </g>
-            </svg>
-          </ColorMode> */}
+          <MenuLinks nav = {nav}>
+            <div className = "navigation">
+              <ul className="nav-list">
+                <li className="nav-elements">
+                  <Link
+                    nav = {nav}
+                    to={`/`}
+                    style={linkStyles}
+                    activeStyle={activeStyles}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-elements">
+                  <Link
+                    to={`/code`}
+                    style={linkStyles}
+                    activeStyle={activeStyles}
+                    partiallyActive={true}
+                  >
+                    Code
+                  </Link>
+                </li>
+                <li className="nav-elements">
+                  <Link
+                    to={`/photo`}
+                    style={linkStyles}
+                    activeStyle={activeStyles}
+                  >
+                    Photography
+                  </Link>
+                </li>
+                <li className="nav-elements">
+                  <Link
+                    to={`/music`}
+                    style={linkStyles}
+                    activeStyle={activeStyles}
+                  >
+                    Music
+                  </Link>
+                </li>
+                <li className="nav-elements">
+                  <Link
+                    to={`/design`}
+                    style={linkStyles}
+                    activeStyle={activeStyles}
+                  >
+                    Design
+                  </Link>
+                </li>
+                <li className="nav-elements">
+                  <Link
+                    to={`/resume`}
+                    style={linkStyles}
+                    activeStyle={activeStyles}
+                    partiallyActive={true}
+                  >
+                    Resume
+                  </Link>
+                </li>
+                <li className="nav-elements">
+                  <Link
+                    to={`/contact`}
+                    style={linkStyles}
+                    activeStyle={activeStyles}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </MenuLinks>
+
         </div>
       </div>
       <div className="site-head-left">
@@ -144,78 +197,6 @@ const Header = props => {
             </div>
           </div>
         </div>
-        <MenuLinks nav = {nav}>
-          <div className = "navigation">
-            <ul className="nav-list">
-              <li className="nav-elements">
-                <Link
-                  nav = {nav}
-                  to={`/`}
-                  style={linkStyles}
-                  activeStyle={activeStyles}
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="nav-elements">
-                <Link
-                  to={`/code`}
-                  style={linkStyles}
-                  activeStyle={activeStyles}
-                  partiallyActive={true}
-                >
-                  Code
-                </Link>
-              </li>
-              <li className="nav-elements">
-                <Link
-                  to={`/photo`}
-                  style={linkStyles}
-                  activeStyle={activeStyles}
-                >
-                  Photography
-                </Link>
-              </li>
-              <li className="nav-elements">
-                <Link
-                  to={`/music`}
-                  style={linkStyles}
-                  activeStyle={activeStyles}
-                >
-                  Music
-                </Link>
-              </li>
-              <li className="nav-elements">
-                <Link
-                  to={`/design`}
-                  style={linkStyles}
-                  activeStyle={activeStyles}
-                >
-                  Design
-                </Link>
-              </li>
-              <li className="nav-elements">
-                <Link
-                  to={`/resume`}
-                  style={linkStyles}
-                  activeStyle={activeStyles}
-                  partiallyActive={true}
-                >
-                  Resume
-                </Link>
-              </li>
-              <li className="nav-elements">
-                <Link
-                  to={`/contact`}
-                  style={linkStyles}
-                  activeStyle={activeStyles}
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </MenuLinks>
       </div>
       <div className = "circle-text">
         <Link
