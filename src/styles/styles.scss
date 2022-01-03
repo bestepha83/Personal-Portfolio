@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6, p, li {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                z-index: 101;
                 // &:hover {
                 //     img {
                 //         animation: logo 2s ease-out;
@@ -150,8 +151,8 @@ h1, h2, h3, h4, h5, h6, p, li {
         width: 100vh;
         height: 8rem;
         transform: rotate(-90deg);
-
         position: absolute;
+        z-index: 300;
         .page-info {
             display: flex;
             justify-content: space-around;
@@ -168,12 +169,13 @@ h1, h2, h3, h4, h5, h6, p, li {
                     white-space: nowrap;
                     display: inline-block;
                     position: relative;
-                    animation: message 10s infinite linear;                  
+                    animation: message 10s infinite linear;   
                 }
             }
             .header-date {
                 .header-date-items {
                     @include flexCenter();
+                    z-index: 103;
                     .date-line {
                         background-color: $black;
                         width: 30px;
@@ -287,8 +289,8 @@ h1, h2, h3, h4, h5, h6, p, li {
         }
     }
     .banner-headshot {
-        width: 50%;
         @include flexCenter();
+        width: 50%;
         img {
             width: 75%;
         }
@@ -1245,25 +1247,34 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 
 
+
+
+
 // RESPONSIVENESS
-
-
-
 
 @media only screen and (max-width: 1000px) {
 // BANNER //
 .banner {
-    h1 {
-        position: relative;
-        left: 50px;
-        width: 70%;
-        font-size: 4rem;
+    width: 100%;
+    flex-direction: column-reverse;
+    .banner-title {
+        align-items: center;
+        text-align: center;
+        width: 80%;
+        h1 {
+            width: 100%;
+            font-size: 4rem;
+        }
+        h3 {
+            width: 100%;
+            font-size: 1.5rem;
+        }
     }
     .banner-headshot {
-        position: absolute;
-        bottom: 80px;
-        right: 150px;
-        width: 40%;
+        width: 80%;
+        img {
+            width: 45%;
+        }
     }
 }
 
@@ -1293,6 +1304,19 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 
 .site-head-container {
+        // TOP NAV //
+        .site-head-top {
+            .site-head-top-content {
+                nav {
+                    .navigation {
+                        .nav-list {
+                            margin-left: 100px;
+                        }         
+                    }
+                }
+    
+            }
+        }
     // LEFT NAV //
     .site-head-left {
         .page-info {
@@ -1495,13 +1519,49 @@ h1, h2, h3, h4, h5, h6, p, li {
 .design-content {
     .design-banner {
         .design-image-container {
-            width: 50vw;
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+        .design-about {
+            width: 80%;
         }
     }
 }
 }
 
 @media only screen and (max-width: 700px) {
+// TOP NAV //
+.site-head-container {
+    .site-head-top {
+        .site-head-top-content {
+            nav {
+                .navigation {
+                    .nav-list {
+                        margin-left: 70px;
+                        .nav-elements {
+                            a {
+                                font-size: 2rem;
+                            }
+                        }
+                    }         
+                }
+            }
+        }
+    }    
+}
+
+.banner {
+    .banner-title {
+        h1 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 1rem;
+        }
+    }
+}
 
 .code-main {
     .project-feed {
@@ -1546,10 +1606,51 @@ h1, h2, h3, h4, h5, h6, p, li {
         }
     }
 }
+
+
+.design-banner {
+    .design-banner-img {
+        width: 18rem;
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+}
+.design-main {
+    .design-feed {
+        .design-card {
+            .design-card-image {
+                .design-card-info {
+                    h4 {
+                        font-size: 2.5rem;
+                    }
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
 .design-content {
     .design-banner {
         .design-image-container {
-            width: 70vw;
+            width: 75%;
+            img {
+                width: 100%;
+            }
+        }
+        .design-about {
+            width: 100%;
+            h1 {
+                font-size: 2.7rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
         }
     }
 }
