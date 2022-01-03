@@ -16,22 +16,22 @@ const MenuIcon = styled.button`
   z-index: 9999;
   outline: none;
   transition: 0.3 ease-in-out;
-  :hover {
-    div:first-child {
-      animation: burger 0.3s;
-      animation-delay: 0s;
-    }
+  // :hover {
+  //   div:first-child {
+  //     animation: burger 0.3s;
+  //     animation-delay: 0s;
+  //   }
 
-    div:nth-child(2) {
-      animation: burger 0.3s;
-      animation-delay: 0.1s;
-    }
+  //   div:nth-child(2) {
+  //     animation: burger 0.3s;
+  //     animation-delay: 0.1s;
+  //   }
 
-    div:last-child {
-      animation: burger 0.3s;
-      animation-delay: 0.2s;
-    }
-  }
+  //   div:last-child {
+  //     animation: burger 0.3s;
+  //     animation-delay: 0.2s;
+  //   }
+  // }
 
   div {
     width: 1.5rem;
