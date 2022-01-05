@@ -16,8 +16,18 @@ const IndexPage = () => (
     <div className = "circle4"></div>
     <section className = "banner">
       <div className = "banner-title">
-        <h1>Hey there! I'm Ben</h1>
-        <h3>Programmer, Designer, Musician, and Photographer</h3>        
+        <h1
+          data-sal="fade"
+          data-sal-duration="2000"
+          data-sal-delay="100"
+          data-sal-easing="ease"  
+        >Hey there! I'm Ben</h1>
+        <h3
+          data-sal="fade"
+          data-sal-duration="2000"
+          data-sal-delay="200"
+          data-sal-easing="ease"
+        >Programmer, Designer, Musician, and Photographer</h3>        
       </div>
       <div className = "banner-headshot">
         <StaticImage

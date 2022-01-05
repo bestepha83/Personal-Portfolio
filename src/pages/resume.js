@@ -21,7 +21,12 @@ const BlogIndex = ({ data }) => {
 
       <section className = "resume-banner">
         <div className = "resume-banner-content">
-          <h2>I am always striving to improve myself, whether that's in my technical skillset or my professional development</h2>
+          <h2
+            data-sal="fade"
+            data-sal-duration="2000"
+            data-sal-delay="100"
+            data-sal-easing="ease"
+          >I am always striving to improve myself, whether that's in my technical skillset or my professional development</h2>
         </div>
         <button>Scroll</button>
       </section>
@@ -106,7 +111,7 @@ const BlogIndex = ({ data }) => {
             <div className = "experience-description">
               <div className = "experience-description-content">
                 <ul>
-                  <li>Designed, developed, optimized, and maintained startup's website and led framing and communication of company model, vision, and branding</li>
+                  <li>Designed, developed, and maintained startup's website and led framing and communication of company model, vision, and branding</li>
                 </ul>
               </div>
               <div className = "experience-description-content">
