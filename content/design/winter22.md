@@ -1,7 +1,7 @@
 ---
 title: Winter 2022
 category: design
-date: "2022-1-15"
+date: "2022-01-15"
 thumbnail: ../assets/design/winter22.png
 description: All new songs from Winter 2022
 ---
