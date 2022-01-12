@@ -31,7 +31,7 @@ const BlogIndex = ({ data }) => {
               data-sal-duration="2000"
               data-sal-delay="100"
               data-sal-easing="ease"
-            >The Tastiest Music There Is</h1>
+            >Unique and Beautiful</h1>
             <h4
               data-sal="fade"
               data-sal-duration="2000"
