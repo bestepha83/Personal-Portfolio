@@ -118,7 +118,7 @@ const IndexPage = () => (
         </div>
         <div className = "col-6">
           <StaticImage
-            src="../images/photo1.png" alt = "Home Photo Banner"
+            src="../images/photo.png" alt = "Home Photo Banner"
             data-sal="fade"
             data-sal-duration="2000"
             data-sal-delay="200"
