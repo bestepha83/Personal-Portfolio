@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import PostCard from "../components/designCard"
 
 import '../styles/styles.scss'
@@ -16,7 +16,7 @@ const DesignIndex = ({ data }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO
+      <Seo
         title="Design"
         keywords={[
           `design`,

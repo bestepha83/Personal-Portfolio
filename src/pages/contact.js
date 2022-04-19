@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import '../styles/styles.scss'
 
@@ -59,7 +59,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO
+        <Seo
           title="Contact"
           keywords={[
             `contact`,

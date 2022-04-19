@@ -1,5 +1,5 @@
 import React from "react"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
@@ -9,7 +9,7 @@ const IndexPage = () => (
   
   <Layout>
 
-    <SEO title="Home" />
+    <Seo title="Home" />
     <div className = "circle1"></div>
     <div className = "circle2"></div>
     <div className = "circle3"></div>
@@ -27,7 +27,7 @@ const IndexPage = () => (
           data-sal-duration="2000"
           data-sal-delay="200"
           data-sal-easing="ease"
-        >Programmer, Designer, Musician, and Photographer</h3>        
+        >Thanks for landing here. I promise you might not regret it</h3>        
       </div>
       <div className = "banner-headshot">
         <StaticImage
@@ -42,7 +42,7 @@ const IndexPage = () => (
           data-sal-duration="2000" // changes duration of the animation (from 200 to 2000 ms)
           data-sal-delay="100" // adds delay to the animation (from 5 to 1000 ms)
           data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
-        >Fueled by a passion to learn, I am always looking for new opportunities and hobbies to master. I'm curious and I like a lot of cool stuff.</h4>
+        >Fueled by a passion to learn, I am always looking for new opportunities and interests to master.</h4>
       </div>
     </section>
     <section className = "home-section">

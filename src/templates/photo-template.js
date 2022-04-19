@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { PostWrapper } from "../components/PostElements"
 
 class BlogPostTemplate extends React.Component {
@@ -14,7 +14,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title={photo.frontmatter.title}
           description={photo.frontmatter.description || photo.excerpt}
         />

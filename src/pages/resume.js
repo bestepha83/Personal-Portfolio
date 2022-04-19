@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import '../styles/styles.scss'
 
@@ -11,7 +11,7 @@ const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
   return (
     <Layout title={siteTitle}>
-      <SEO
+      <Seo
         title="Resume"
         keywords={[
           `Resume`,
@@ -122,7 +122,7 @@ const BlogIndex = ({ data }) => {
                   <li>Gatsby</li>
                   <li>Branding</li>
                 </ul>
-                <a href = "https://malajamrecords.com/" target="_blank">Check It Out</a>
+                <a href = "https://malajamrecords.com/" target="_blank" rel="noreferrer">Check It Out</a>
               </div>
             </div>
           </div>
@@ -202,7 +202,7 @@ const BlogIndex = ({ data }) => {
                   <li>Webflow</li>
                   <li>Communication</li>
                 </ul>
-                <a href = "https://malajamrecords.com/" target="_blank">Check It Out</a>
+                <a href = "https://malajamrecords.com/" target="_blank" rel="noreferrer">Check It Out</a>
               </div>
             </div>
           </div>

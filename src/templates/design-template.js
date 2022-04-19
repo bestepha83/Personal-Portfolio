@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import PropTypes from "prop-types"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 class BlogPostTemplate extends React.Component {
@@ -13,7 +13,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title={design.frontmatter.title}
           description={design.frontmatter.description || design.excerpt}
         />

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import PostCard from "../components/photoCard"
 
 import '../styles/styles.scss'
@@ -17,7 +17,7 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO
+      <Seo
         title="Photography"
         keywords={[
           `photography`,
@@ -32,7 +32,7 @@ const BlogIndex = ({ data }) => {
         <div className = "photo-banner-sqaure1"></div>
         <div className = "photo-banner-img">
           <StaticImage
-            src="../images/photoban1.jpg"
+            src="../images/photo.png"
             alt = "Headshot"
           />        
         </div>
