@@ -22,7 +22,9 @@ const BlogIndex = ({ data }) => {
         description="Ben's Coding Projects"
       />
       <div className = "circle1"></div>
+      <div className = "circle2"></div>
       <div className = "circle3"></div>
+      <div className = "circle4"></div>
       <section className = "code-banner">
         <div className = "code-banner-content">
           <h1

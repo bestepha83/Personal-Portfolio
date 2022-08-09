@@ -7,7 +7,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&display=swap");
 
-$background-color: rgb(245, 245, 245);
+$background-color: rgb(255, 243, 223);
 $hover-card-color: rgb(230, 230, 230);
 $lightgreen: #B1E2C6;
 $darkgreen: #55916f;
@@ -70,11 +70,9 @@ h1, h2, h3, h4, h5, h6, p, li {
                 }
                 h2 {
                     font-family: 'Arvo', serif;
-                    background: -webkit-linear-gradient(-45deg, #99bfa9 5%,#95acbe 53%, #899eaf 91%);
-                    -webkit-background-clip: text;
-                    -webkit-text-stroke: 4px transparent;
-                    -webkit-text-fill-color: $background-color;
+                    color: $darkblue;
                     margin-left: 10px;
+                    font-size: 1.7rem;
                 }
             }
             .burger {
@@ -88,7 +86,7 @@ h1, h2, h3, h4, h5, h6, p, li {
                 width: 100vw;
                 height: 100vh;
                 transition: 0.8s ease-in-out;
-                background-color: rgba(245, 245, 245, 0.95);
+                background-color: $darkblue;
                 .navigation {
                     display: flex;
                     justify-content: flex-start;
@@ -365,7 +363,7 @@ h1, h2, h3, h4, h5, h6, p, li {
         font-size: 8rem;
         z-index: 1;
     }
-    .photo-banner-sqaure1,  .photo-banner-sqaure2, .photo-banner-sqaure3{
+    .photo-banner-sqaure1{
         width: 30rem;
         height: 20rem;
         border-radius: 10px;
@@ -375,14 +373,6 @@ h1, h2, h3, h4, h5, h6, p, li {
     .photo-banner-sqaure1 {
         transform: rotate(4deg);
         background-color: burlywood;
-    }
-    .photo-banner-sqaure2 {
-        transform: rotate(8deg);
-        background-color: orangered;
-    }
-    .photo-banner-sqaure3 {
-        transform: rotate(12deg);
-        background-color: orange;
     }
     .photo-banner-img {
         width: 25rem;
@@ -550,68 +540,53 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 
 .circle1, .circle2, .circle3, .circle4 {
-    // border-radius: 50%;
     z-index: -1;
     filter: blur(50px);
     position: fixed;
 }
 .circle1 {
-    // height: 20rem;
-    height: 100vh;
-    width: 20rem;
+    height: 20vh;
+    width: 100vw;
     background-color: $lightblue;
-    top: 20vh;
+    top: 80vh;
     left: 0%;
-    animation: moveCircle2 70s ease infinite;
+    z-index: 4;
 }
 .circle2 {
-    height:25rem;
-    width: 25rem;
-    background-color: $lightgreen;
-    top: 50vh;
-    left: -10%;
-    animation: moveCircle1 75s ease infinite;
+    height: 10rem;
+    width: 30rem;
+    background-color:$lightblue;
+    top: 75vh;
+    animation: moveCircle1 10s ease infinite;
+    z-index: 3;
 }
 .circle3 {
-    height: 20rem;
-    width: 20rem;
+    height: 10rem;
+    width: 30rem;
     background-color: $lightblue;
-    top: 50vh;
-    right: -10%;
-    animation: moveCircle1 75s ease infinite;
+    top: 75vh;
+    right: 0;
+    animation: moveCircle1 10s ease infinite;
+    animation-delay: 2s;
+    z-index: 3;
 }
 .circle4 {
-    height: 25rem;
-    width: 25rem;
-    background-color: $lightgreen;
-    top: 20vh;
-    right: 0%;
-    animation: moveCircle2 70s ease infinite;
+    height: 10rem;
+    width: 30rem;
+    background-color: $lightblue;
+    top: 75vh;
+    right: 30vw;
+    animation: moveCircle1 10s ease infinite;
+    animation-delay: 4s;
+    z-index: 3;
 }
 
 @keyframes moveCircle1 {
     0% {
         transform: translateY(0);
     }
-    25% {
-        transform: translateY(30vh);
-    }
-    75% {
-        transform: translateY(-50vh);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-@keyframes moveCircle2 {
-    0% {
-        transform: translateY(0);
-    }
     50% {
-        transform: translateY(-30vh);
-    }
-    75% {
-        transform: translateY(40vh);
+        transform: translateY(30vh);
     }
     100% {
         transform: translateY(0);

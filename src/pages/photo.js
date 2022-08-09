@@ -27,8 +27,6 @@ const BlogIndex = ({ data }) => {
       <div className = "circle2"></div>
       <div className = "circle4"></div>
       <section className = "photo-banner">
-        <div className = "photo-banner-sqaure3"></div>
-        <div className = "photo-banner-sqaure2"></div>
         <div className = "photo-banner-sqaure1"></div>
         <div className = "photo-banner-img">
           <StaticImage

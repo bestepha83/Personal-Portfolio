@@ -73,11 +73,11 @@ const Header = props => {
   const [nav, setToggleNav] = React.useState(false)
   const [button, setToggleButton] = React.useState(false)
   const linkStyles = {
-    color: '#181818',
+    color: 'white',
     opacity: "0.4",
   }
   const activeStyles = {
-    color: '#181818',
+    color: 'white',
     opacity: "1",
   }
   const data = useStaticQuery(graphql`
