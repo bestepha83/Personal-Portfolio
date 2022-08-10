@@ -71,7 +71,7 @@ export default class Contact extends React.Component {
           <div className = "contact-content">
             <div className = "contact-col-6">
               <StaticImage
-                src="../images/design.png" alt = "Headshot"
+                src="../images/contact.png" alt = "Headshot"
               />
             </div>
             <div className="contact-col-6">
