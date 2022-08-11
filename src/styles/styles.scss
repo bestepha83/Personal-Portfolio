@@ -998,6 +998,8 @@ h1, h2, h3, h4, h5, h6, p, li {
 
 // MUSIC TEMPLATE //
 .music-content {
+    margin-top: 5rem;
+    width: 100%;
     .music-banner {
         @include flexCenter();
         flex-direction: column;
@@ -1015,7 +1017,7 @@ h1, h2, h3, h4, h5, h6, p, li {
             .music-content-excerpt {
                 height: 5%;
                 transform: rotate(-90deg);
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
         }
         h1 {
@@ -1023,8 +1025,16 @@ h1, h2, h3, h4, h5, h6, p, li {
         }
     }
     .music-about {
+        @include flexCenter();
+        padding: 2rem 4rem;
+        width: 100%;
         .music-content-body {
-            width: 80%;
+            @include flexCenter();
+            flex-direction: column;
+            width: 100%;
+            p {
+                font-size: 2rem;
+            }
             img {
                 width: 20rem;
             }
