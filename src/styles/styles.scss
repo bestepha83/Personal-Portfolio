@@ -8,7 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&display=swap");
 
 $background-color: rgb(255, 243, 223);
-$hover-card-color: rgb(255, 237, 205);
+$hover-card-color: rgba(222, 184, 135, 0.4);
+$hover-card-shadow: rgba(222, 184, 135, 0.7);
 $lightgreen: #B1E2C6;
 $darkgreen: #55916f;
 $lightblue: #B1CCE2;
@@ -60,11 +61,11 @@ h1, h2, h3, h4, h5, h6, p, li {
                 justify-content: center;
                 align-items: center;
                 z-index: 101;
-                // &:hover {
-                //     img {
-                //         animation: logo 2s ease-out;
-                //     }
-                // }
+                &:hover {
+                    img {
+                        animation: logo 0.5s linear;
+                    }
+                }
                 img {
                     width: 45px;
                 }
@@ -205,23 +206,17 @@ h1, h2, h3, h4, h5, h6, p, li {
     0% {
         transform: rotate(0);
     }
-    10% {
-        transform: rotate(30deg);
+    20% {
+        transform: rotate(20deg);
     }
-    30% {
-        transform: rotate(25deg)
-    }
-    45% {
-        transform: rotate(-20deg)
+    40% {
+        transform: rotate(-20deg);
     }
     60% {
-        transform: rotate(15deg)
+        transform: rotate(20deg);
     }
-    75% {
-        transform: rotate(-10deg)
-    }
-    90% {
-        transform: rotate(5deg)
+    80% {
+        transform: rotate(-20deg);
     }
     100% {
         transform: rotate(0);
@@ -367,15 +362,13 @@ h1, h2, h3, h4, h5, h6, p, li {
         z-index: 1;
     }
     .photo-banner-sqaure1{
-        width: 30rem;
-        height: 20rem;
+        width: 32rem;
+        height: 22rem;
         border-radius: 10px;
         position: absolute;
-        top: 18%;
-    }
-    .photo-banner-sqaure1 {
+        top: 16%;
         transform: rotate(4deg);
-        background-color: burlywood;
+        background-color: $hover-card-shadow;
     }
     .photo-banner-img {
         width: 25rem;
@@ -437,8 +430,8 @@ h1, h2, h3, h4, h5, h6, p, li {
             width: 90%;
             height: 80vh;
             margin: 2rem 0;
-            background-color: rgba(245, 245, 245, 0.4);
-            box-shadow: 5px 5px 10px $hover-card-color;
+            background-color: $hover-card-color;
+            box-shadow: 5px 5px 10px $hover-card-shadow;
             border-radius: 25px;
             transition: 0.3s ease;
             &:hover {
@@ -646,8 +639,8 @@ h1, h2, h3, h4, h5, h6, p, li {
             width: 90%;
             height: 80vh;
             margin: 1rem 0;
-            background-color: rgba(245, 245, 245, 0.4);
-            box-shadow: 5px 5px 10px $hover-card-color;
+            background-color: $hover-card-color;
+            box-shadow: 5px 5px 10px $hover-card-shadow;
             border-radius: 25px;
             transition: 0.3s ease;
             &:hover {
@@ -954,8 +947,8 @@ h1, h2, h3, h4, h5, h6, p, li {
             width: 90%;
             height: 80vh;
             margin: 1rem 0;
-            background-color: rgba(245, 245, 245, 0.4);
-            box-shadow: 5px 5px 10px $hover-card-color;
+            background-color: $hover-card-color;
+            box-shadow: 5px 5px 10px $hover-card-shadow;
             border-radius: 25px;
             transition: 0.3s ease;
             &:hover {
@@ -969,7 +962,7 @@ h1, h2, h3, h4, h5, h6, p, li {
                 height: 100%;
                 width: 100%;
                 text-decoration: none;
-                color: black;
+                color: $black;
                 .music-card-image {
                     @include flexCenter();
                     height: 90%;
@@ -992,6 +985,49 @@ h1, h2, h3, h4, h5, h6, p, li {
             }
 
         }
+    }
+    .features-card {
+        @include flexCenter();
+        width: 90%;
+        height: 80vh;
+        margin: 1rem 0;
+        background-color: $hover-card-color;
+        box-shadow: 5px 5px 10px $hover-card-shadow;
+        border-radius: 25px;
+        transition: 0.3s ease;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+        a {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+            color: $black;
+            .music-card-image {
+                @include flexCenter();
+                height: 90%;
+                width: 40%;
+                img {
+                    height: 100%;
+                    width: 35vw;
+                }
+            }
+            .music-card-content {
+                width: 50%;
+                h4 {
+                    font-size: 4rem;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    font-size: 2rem;
+                }
+            }       
+        }
+
     }
 }
 

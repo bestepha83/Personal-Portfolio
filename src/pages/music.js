@@ -7,6 +7,7 @@ import PostCard from "../components/musicCard"
 
 import '../styles/styles.scss'
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -67,6 +68,53 @@ const BlogIndex = ({ data }) => {
       </section>
       <section className = "music-main">
         <h2>Features</h2>
+        <div className = "features-card">
+          <Link to="https://open.spotify.com/track/06IrinYMcPyJ6ynfPMZVsi?si=a55e68c4666a4922">
+            <div className = "music-card-image">
+              <StaticImage
+                  src="../images/clouds.png"
+                  alt = "Headshot"
+                  className = ""
+              />              
+            </div>
+            <div className = "music-card-content">
+              <h4>Clouds</h4>
+              <p>The Tarantino Experience</p>              
+            </div>
+          </Link>          
+        </div>
+        <div className = "features-card">
+          <Link to="https://open.spotify.com/track/4KssC485dyIIMMtdAdGrw2?si=2a6252b665304c2a">
+            <div className = "music-card-image">
+              <StaticImage
+                  src="../images/take.png"
+                  alt = "Headshot"
+                  className = ""
+              />              
+            </div>
+            <div className = "music-card-content">
+              <h4>Take What You Want</h4>
+              <p>Lana Leone</p>              
+            </div>
+          </Link>
+        </div>
+        <div className = "features-card">
+          <Link to="https://open.spotify.com/track/08kjLgYiqugU0s2AmmTz3q?si=33f96880923a493c">
+            <div className = "music-card-image">
+              <StaticImage
+                  src="../images/night.png"
+                  alt = "Headshot"
+                  className = ""
+              />            
+            </div>  
+
+            <div className = "music-card-content">
+              <h4>Last Night</h4>
+              <p>Lana Leone</p>              
+            </div>
+          </Link>          
+        </div>
+
       </section>
     </Layout>
   )
