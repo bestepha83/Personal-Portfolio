@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo&family=Lato:wght@300&display=swap");
 
 $background-color: rgb(255, 243, 223);
-$hover-card-color: rgb(230, 230, 230);
+$hover-card-color: rgb(255, 237, 205);
 $lightgreen: #B1E2C6;
 $darkgreen: #55916f;
 $lightblue: #B1CCE2;
@@ -338,8 +338,11 @@ h1, h2, h3, h4, h5, h6, p, li {
                     border-radius: 7px;
                     padding: 0.75rem 2.3rem;
                     box-shadow: #989898 3px 3px 5px;
+                    transition: 0.1s ease;
                     &:hover {
                         cursor: pointer;
+                        transform: translateX(-2px) translateY(-2px);
+                        box-shadow: #989898 5px 5px 5px;
                     }
                     &:active {
                         box-shadow: none;
@@ -418,6 +421,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 .photo-main {
     @include flexCenter();
     flex-direction: column;
+    margin-bottom: 10rem;
     h2 {
         font-size: 7rem;
     }
@@ -606,10 +610,7 @@ h1, h2, h3, h4, h5, h6, p, li {
         h1 {
             @include flexCenter();
             font-size: 5rem;
-            background: -webkit-linear-gradient(-45deg, #99bfa9 5%,#95acbe 53%, #899eaf 91%);
-            -webkit-background-clip: text;
-            -webkit-text-stroke: 4px transparent;
-            -webkit-text-fill-color: $background-color;
+            color: $darkblue;
             margin-bottom: 2rem;
         }
         a {
@@ -618,7 +619,7 @@ h1, h2, h3, h4, h5, h6, p, li {
             font-size: 2rem;
             transition: all 0.3s ease;
             &:hover {
-                color: $darkgreen;
+                color: $darkblue;
                 cursor: pointer;
             }
         }
@@ -629,6 +630,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 .code-main {
     @include flexCenter();
     flex-direction: column;
+    margin-bottom: 10rem;
     h2 {
         font-size: 7rem;
     }
@@ -764,6 +766,7 @@ h1, h2, h3, h4, h5, h6, p, li {
 .design-main {
     @include flexCenter();
     flex-direction: column;
+    margin-bottom: 10rem;
     h2 {
         font-size: 7rem;
         margin: 3rem;

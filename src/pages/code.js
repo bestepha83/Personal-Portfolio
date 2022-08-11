@@ -32,7 +32,7 @@ const BlogIndex = ({ data }) => {
             data-sal-duration="2000"
             data-sal-delay="100"
             data-sal-easing="ease"
-          >I design and develop websites for startups, clubs, and for personal projects.</h1>
+          >I design and develop websites for startups, for clubs, and for fun.</h1>
           <a href = "https://github.com/bestepha83" target="_blank"
             data-sal="fade"
             data-sal-duration="2000"
