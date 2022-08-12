@@ -6,6 +6,7 @@ import Seo from "../components/seo"
 import PostCard from "../components/codeCard"
 
 import '../styles/styles.scss'
+import { StaticImage } from "gatsby-plugin-image"
 
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -21,10 +22,6 @@ const BlogIndex = ({ data }) => {
         ]}
         description="Ben's Coding Projects"
       />
-      <div className = "circle1"></div>
-      <div className = "circle2"></div>
-      <div className = "circle3"></div>
-      <div className = "circle4"></div>
       <section className = "code-banner">
         <div className = "code-banner-content">
           <h1
@@ -39,6 +36,21 @@ const BlogIndex = ({ data }) => {
             data-sal-delay="300"
             data-sal-easing="ease"
           >My GitHub</a>
+        </div>
+        <div className = "circle1"></div>
+        <div className = "waves">
+          <div className = "wave-1">
+            <StaticImage src="../images/wave-1.png" 
+                          alt = "Wave"/>            
+          </div>
+          <div className = "wave-2">
+            <StaticImage src="../images/wave-2.png" 
+                          alt = "Wave"/>            
+          </div>
+          <div className = "wave-3">
+            <StaticImage src="../images/wave-3.png" 
+                          alt = "Wave"/>            
+          </div>
         </div>
       </section>
       <section className = "code-main">
