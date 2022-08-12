@@ -38,6 +38,28 @@ const BlogIndex = ({ data }) => {
       <section className = "resume-main">
         <div className = "experience">
           <div className = "experience-header">
+            <h3>Technology Risk Consulting Intern</h3>
+            <h4>Ernst & Young (EY)</h4>
+          </div>
+          <div className = "experience-content">
+            <div className = "experience-description">
+              <div className = "experience-description-content">
+                <ul>
+                  <li>
+                    <span>Created Budget v Actual Analysis to assess team efficiency and resource allocation</span>
+                  </li>
+                </ul>
+              </div>
+              <div className = "experience-description-content">
+                <ul className = "skills">
+                  <li>Data Analysis</li>
+                </ul>
+              </div>
+            </div>                 
+          </div>
+        </div>
+        <div className = "experience">
+          <div className = "experience-header">
             <h3>Industry Development Consultant</h3>
             <h4>Ideal Tridon</h4>
           </div>
@@ -77,7 +99,6 @@ const BlogIndex = ({ data }) => {
               </div>
             </div>                 
           </div>
-
         </div>
         <div className = "experience">
           <div className = "experience-header">
@@ -209,36 +230,52 @@ const BlogIndex = ({ data }) => {
         </div>
       </section>
       <section className = "resume-main">
-        <h2>Summary of Tech Skills</h2>
-        <ul>
-            <li>Microsoft Office Suite</li>
-            <li>Graphic Design:</li>
+        <h2>Technological Proficiencies</h2>
+        <div className = "tech-skills">
+          <div className = "tech-skill-section">
+            <h6>Microsoft Office Suite</h6>
             <ul>
-                <li>Adobe Photoshop</li>
-                <li>Adobe XD</li>
-                <li>Adobe Illustrator</li>
-                <li>Adobe After Effects</li>
-                <li>Adobe Dimension</li>
-            </ul>
-            <li>Logic Pro X</li>
-            <li>Web Design and Development</li>
+              <li>Powerpoint</li>
+              <li>Excel</li>
+              <li>Word</li>
+            </ul>            
+          </div>
+          <div className = "tech-skill-section">
+            <h6>Graphic Design</h6>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Gatsby</li>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Java</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe XD</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe After Effects</li>
+              <li>Adobe Dimension</li>
             </ul>
-            <li>Data Analysis and Statistics</li>
+          </div>
+          <div className = "tech-skill-section">
+            <h6>Web Design and Development</h6>
             <ul>
-                <li>R</li>
-                <li>Excel</li>
-                <li>SQL</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Gatsby</li>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Java</li>
+              </ul>
+          </div>
+          <div className = "tech-skill-section">
+            <h6>Data Analysis and Statistics</h6>
+            <ul>
+              <li>R</li>
+              <li>Excel</li>
+              <li>SQL</li>
             </ul>
-        </ul>
+          </div>
+          <div className = "tech-skill-section">
+            <h6>Logic Pro X</h6>
+          </div>
+        </div>
+
       </section>
     </Layout>
   )
