@@ -567,7 +567,7 @@ h1, h2, h3, h4, h5, h6, p, li {
         // filter: blur(10px);
         position: absolute;
         top: 90vh;
-        height: 10vh;
+        height: 20vh;
         width: 100vw;
         background-color: $lightblue;
         z-index: 4;
@@ -575,13 +575,13 @@ h1, h2, h3, h4, h5, h6, p, li {
     .waves {
         position: absolute;
         top: 0;
-        left: 5vw;
+        left: -20vw;
         width: 100%;
         .wave-1, .wave-2, .wave-3 {
             position: absolute;
-            top: 90vh;
-            width: 30vw;
-            animation: moveWave 7.5s ease infinite;
+            top: 91vh;
+            width: 80vw;
+            animation: moveWave 7.5s ease-in-out infinite;
             img {
                 width: 100%;
                 height: 100%;
@@ -1330,7 +1330,7 @@ h1, h2, h3, h4, h5, h6, p, li {
     .banner-headshot {
         width: 80%;
         img {
-            width: 45%;
+            width: 20rem;
         }
     }
 }
