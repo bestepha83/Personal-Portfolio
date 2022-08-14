@@ -1,7 +1,7 @@
 ---
 title: Nostalgic
 category: design
-date: "2021-1-15"
+date: "2021-01-15"
 thumbnail: ../assets/design/nostalgic.png
 description: Dreamy, Rememberance, ...Nostalgic
 ---
