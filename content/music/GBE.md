@@ -12,7 +12,7 @@ Goodbye Eden is an indie rock band given life from the suburbs of Wisconsin. Con
 
 ![Goodbye Eden](../assets/music/gbe-3.png)
 
-![Goodbye Eden](../assets/music/gbe-4.png)
+![Goodbye Eden](../assets/music/gbe-4.PNG)
 
 ![Goodbye Eden](../assets/music/gbe-5.png)
 

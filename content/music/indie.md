@@ -6,8 +6,8 @@ thumbnail: ../assets/music/indie-1.jpg
 description: Indie Rock
 ---
 
-![Indie Darlings](../assets/music/indie-2.jpg)
+![Indie Darlings](../assets/music/indie-2.JPG)
 
-![Indie Darlings](../assets/music/indie-3.jpg)
+![Indie Darlings](../assets/music/indie-3.JPG)
 
-![Indie Darlings](../assets/music/indie-4.jpg)
+![Indie Darlings](../assets/music/indie-4.JPG)

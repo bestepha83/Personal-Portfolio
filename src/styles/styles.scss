@@ -1153,7 +1153,7 @@ h1, h2, h3, h4, h5, h6, p, li {
                 width: 90%;
                 .experience-description-content {
                     margin: 1rem 0;
-                    height: 50vh;
+                    height: 60vh;
                     width: 45%;
                     @include flexCenter();
                     flex-direction: column;
@@ -1163,11 +1163,30 @@ h1, h2, h3, h4, h5, h6, p, li {
                     h4 {
                         font-size: 2.5rem;
                     }
+                    a {
+                        font-size: 1.1rem;
+                        text-decoration: none;
+                        background-color: transparent;
+                        color: $black;
+                        border: 2px solid $black;
+                        border-radius: 7px;
+                        padding: 0.75rem 2.3rem;
+                        box-shadow: #989898 3px 3px 5px;
+                        transition: 0.1s ease;
+                        &:hover {
+                            cursor: pointer;
+                            transform: translateX(-2px) translateY(-2px);
+                            box-shadow: #989898 5px 5px 5px;
+                        }
+                        &:active {
+                            box-shadow: none;
+                        }
+                    }
                     ul {
                         height: 100%;
                         text-align: left;
                         li {
-                            font-size: 2.5rem;
+                            font-size: 2rem;
                             margin: 1.5rem 0;
                             overflow: hidden;
                             list-style: square;
@@ -1183,7 +1202,11 @@ h1, h2, h3, h4, h5, h6, p, li {
                         }
                     }
                     .skills {
-                        @include flexCenter();
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
                         flex-wrap: wrap;
                         li {
                             list-style: none;

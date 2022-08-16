@@ -251,7 +251,7 @@ const BlogIndex = ({ data }) => {
             </ul>
           </div>
           <div className = "tech-skill-section">
-            <h6>Web Design and Development</h6>
+            <h6>Programming and Web Design</h6>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -261,6 +261,7 @@ const BlogIndex = ({ data }) => {
               <li>Python</li>
               <li>Django</li>
               <li>Java</li>
+              <li>Webflow</li>
               </ul>
           </div>
           <div className = "tech-skill-section">
@@ -272,7 +273,10 @@ const BlogIndex = ({ data }) => {
             </ul>
           </div>
           <div className = "tech-skill-section">
-            <h6>Logic Pro X</h6>
+          <h6>Music Production</h6>
+            <ul>
+              <li>Logic Pro X</li>
+            </ul>
           </div>
         </div>
 
