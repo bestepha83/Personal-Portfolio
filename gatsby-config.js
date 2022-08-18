@@ -35,6 +35,7 @@ module.exports = {
           rootMargin: '0% 50%', // Corresponds to root's bounding box margin
           enterEventName: 'sal:in', // Enter event name
           exitEventName: 'sal:out', // Exit event name
+<<<<<<< HEAD
       },
     },
     {
@@ -67,6 +68,9 @@ module.exports = {
           // // defaults to false
           // enableWebVitalsTracking: true,
       },
+=======
+      }
+>>>>>>> parent of a4900ca... added google analytics
     },
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
