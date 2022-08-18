@@ -552,7 +552,7 @@ h1, h2, h3, h4, h5, h6, p, li {
             margin-bottom: 2rem;
         }
         a {
-            text-decoration: none;
+            text-decoration: underline;
             color: $black;
             font-size: 2rem;
             transition: all 0.3s ease;
@@ -1425,6 +1425,11 @@ h1, h2, h3, h4, h5, h6, p, li {
         width: 60%;
         h1 {
             font-size: 3rem;
+        }
+    }
+    .waves {
+        .wave-1, .wave-2, .wave-3 {
+            top: 93.5vh;         
         }
     }
 }
