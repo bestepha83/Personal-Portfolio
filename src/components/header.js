@@ -80,13 +80,13 @@ const Header = props => {
     color: 'white',
     opacity: "1",
   }
-  const data = useStaticQuery(graphql`
-    query {
-      currentBuildDate {
-        currentDate
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     currentBuildDate {
+  //       currentDate
+  //     }
+  //   }
+  // `)
   return (
     <header className="site-head-container">
       <div className = "site-head-top">
@@ -187,7 +187,7 @@ const Header = props => {
           <div className = "header-date">
             <div className = "header-date-items">
               <div className = "date-line"></div>
-              <h2>Updated {data.currentBuildDate.currentDate}</h2>
+              {/* <h2>Updated {data.currentBuildDate.currentDate}</h2> */}
               <div className = "date-line"></div>              
             </div>
           </div>
