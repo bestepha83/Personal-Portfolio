@@ -6,7 +6,6 @@ module.exports = {
     author: "Ben Stephan",
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-react-helmet",
  
     //styles
