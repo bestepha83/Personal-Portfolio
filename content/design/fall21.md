@@ -1,7 +1,7 @@
 ---
 title: Fall 2021
 category: design
-date: "2021-01-15"
+date: "2020-01-15"
 thumbnail: ../assets/design/fall21.jpg
 description: All new songs from Fall 2021
 ---

@@ -1,7 +1,7 @@
 ---
 title: Sunday Morning Vibes
 category: design
-date: "2020-12-15"
+date: "2021-12-15"
 thumbnail: ../assets/design/sunday.jpg
 description: The warm embrace of hot coffee on a Sunday morning
 ---
