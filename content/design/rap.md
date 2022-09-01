@@ -2,7 +2,7 @@
 title: 90s Rap
 category: design
 date: "2021-01-15"
-thumbnail: ../assets/design/rap.png
+thumbnail: ../assets/design/rap.jpg
 description: The only rap
 ---
 

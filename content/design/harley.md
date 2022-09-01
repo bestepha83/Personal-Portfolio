@@ -2,7 +2,7 @@
 title: Harley Quinn
 category: design
 date: "2021-01-15"
-thumbnail: ../assets/design/harley.png
+thumbnail: ../assets/design/harley.jpg
 description: Harley Quinn
 ---
 

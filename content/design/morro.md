@@ -2,7 +2,7 @@
 title: Morro Bay
 category: design
 date: "2021-10-15"
-thumbnail: ../assets/design/morro.png
+thumbnail: ../assets/design/morro.jpg
 description: Chillin at the Beach
 ---
 

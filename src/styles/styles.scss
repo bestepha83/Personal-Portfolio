@@ -113,22 +113,22 @@ h1, h2, h3, h4, h5, h6, p, li {
                             &:hover {
                                 position: relative;
                             }
-                            &:hover:nth-child(2):after {
-                                content: "";
-                                background-image: url("../images/code.png");
-                            }
-                            &:hover:nth-child(3):after {
-                                content: "";
-                                background-image: url("../images/photo.png");               
-                            }
-                            &:hover:nth-child(4):after {
-                                content: "";
-                                background-image: url("../images/music.png");                        
-                            }
-                            &:hover:nth-child(5):after {
-                                content: "";
-                                background-image: url("../images/design.png");
-                            }
+                            // &:hover:nth-child(2):after {
+                            //     content: "";
+                            //     background-image: url("../images/code.png");
+                            // }
+                            // &:hover:nth-child(3):after {
+                            //     content: "";
+                            //     background-image: url("../images/photo.png");               
+                            // }
+                            // &:hover:nth-child(4):after {
+                            //     content: "";
+                            //     background-image: url("../images/music.png");                        
+                            // }
+                            // &:hover:nth-child(5):after {
+                            //     content: "";
+                            //     background-image: url("../images/design.png");
+                            // }
                             a {
                                 font-size: 3rem;
                                 text-decoration: none;

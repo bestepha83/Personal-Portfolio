@@ -2,7 +2,7 @@
 title: Chill
 category: design
 date: "2021-10-15"
-thumbnail: ../assets/design/chill.png
+thumbnail: ../assets/design/chill.jpg
 description: Hangin Out, Havin a Ball
 ---
 

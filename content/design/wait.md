@@ -2,7 +2,7 @@
 title: Wait For It
 category: design
 date: "2021-10-15"
-thumbnail: ../assets/design/wait.png
+thumbnail: ../assets/design/wait.jpg
 description: Perfect for watching the sunset
 ---
 

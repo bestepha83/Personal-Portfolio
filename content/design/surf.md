@@ -2,7 +2,7 @@
 title: Surf's Up
 category: design
 date: "2022-10-15"
-thumbnail: ../assets/design/surf.png
+thumbnail: ../assets/design/surf.jpg
 description: A blend of punk rock and surfiness
 ---
 

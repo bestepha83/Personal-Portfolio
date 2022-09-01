@@ -2,7 +2,7 @@
 title: The Tropics
 category: design
 date: "2020-10-16"
-thumbnail: ../assets/design/tropics.png
+thumbnail: ../assets/design/tropics.jpg
 description: Any tropical situation you find yourself in
 ---
 

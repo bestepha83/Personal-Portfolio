@@ -2,7 +2,7 @@
 title: Rock On Bro
 category: design
 date: "2021-01-15"
-thumbnail: ../assets/design/rock.png
+thumbnail: ../assets/design/rock.jpg
 description: Who are you lookin at? Punk!
 ---
 

@@ -2,7 +2,7 @@
 title: Dazed and Dizzy
 category: design
 date: "2022-10-15"
-thumbnail: ../assets/design/dazed.png
+thumbnail: ../assets/design/dazed.jpg
 description: Euphoric, Elated, Ear-bending
 ---
 
